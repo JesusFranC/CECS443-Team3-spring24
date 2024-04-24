@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CreatePoll() {
+export const CreatePoll = () => {
   return (
     <div>CreatePoll</div>
   )
