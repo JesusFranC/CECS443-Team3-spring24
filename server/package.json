@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "polling and rating app for CSULB students",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusFranC/CECS443-Team3-spring24.git"
+  },
+  "keywords": [
+    "poll"
+  ],
+  "author": "Angeline Dequit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesusFranC/CECS443-Team3-spring24/issues"
+  },
+  "homepage": "https://github.com/JesusFranC/CECS443-Team3-spring24#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
