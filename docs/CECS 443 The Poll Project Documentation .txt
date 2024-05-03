@@ -1,0 +1,418 @@
+﻿Team 3 (The Poll Project)
+
+
+Team 3 (The Poll Project)
+
+
+1. Jason Barber
+   * Student ID: 025979653
+   * Email: jason.barber01@student.csulb.edu
+2. Giovanni Contreras
+   * Student ID: 016465993
+   * Email: giovanni.contreras@student.csulb.edu
+3. Angeline Dequit
+   * Student ID:  027608501
+   * Email: angeline.dequit@student.csulb.edu
+4. Ninjin Odkhuu
+   * Student ID: 025765218
+   * Email: ninjin.odkhuu@student.csulb.edu
+5. Jesus Cerda
+   * Student ID: 
+   * Email: sophia.kim@example.com
+________________
+
+
+Preface
+(Describe the purpose of this document, its expected readership and its version history, including a rationale for the creation of a new version and a summary of the changes made in each version.)
+
+
+Version
+	Date
+	Changes
+	1.0
+	3/14/2024
+	* Added following sections for initial version of Document:
+   * Cover Page
+   * Preface
+   * Version History
+   * Purpose
+   * Audience
+   * Introduction
+   * Project Overview
+   * Project Goals
+   * User Requirements and Use Cases
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+Purpose
+The document “CECS 443 The Poll Project Document” serves as a comprehensive guide for the development and understanding of the software project titled "The Poll Project".
+Audience
+The intended audience of this document includes project stakeholders, developers, testers, and anyone involved in the project lifecycle.
+Introduction
+Project Overview
+Due to the large size of the campus, a pressing issue at CSULB is the inability to find fun activities or locations on campus. “The Poll Project” intends to change this problem. "The Poll Project" involves the development of a rating and polling application specifically designed for CSULB students. It enables registered users with a valid CSULB ID to anonymously post and engage in reviews, ratings, and polls related to campus entities such as labs, events, food establishments, cafes, and concerts thus providing CSULB students a way to find and discuss locations and events.
+Project Goals
+* Improve navigating through campus.
+* Provide a platform for CSULB students to anonymously post and participate in reviews and ratings for various campus entities.
+* Have an informed student community of facilities.
+* Provide real-time reporting capabilities.
+* Develop a robust system architecture with scalable features to accommodate future enhancements and expansions.
+Glossary
+* CSULB: California State University, Long Beach
+* Poll: A questionnaire designed to gather opinions or preferences from users on campus-related topics, typically consisting of multiple-choice questions.
+* Rating: An evaluation given by users to specific entities on campus, such as labs, events, food establishments, cafes, and concerts, typically on a scale with an arbitrary number of points.
+* Review: An anonymous commentary provided by users regarding their experiences with specific entities on campus, including labs, events, food establishments, cafes, and concerts.
+* Campus Entity: A restaurant, building, or other operation on campus. For example, the Outpost Grill, Liberal Arts-4, or the CSULB library.
+User Requirements and Use Cases
+User Stories
+
+
+
+
+Identifier
+	User Stories
+	US - 1
+	As a registered user, I want to log in securely so that I cannot be held responsible for someone else’s actions, so I can ensure the security of my account.
+	US - 2
+	As a CSULB student, I want to anonymously post reviews and ratings for campus entities, so I can share my experiences with others.
+	US - 3
+	As a CSULB student, I want to participate in polls about campus-related topics, so I can contribute to campus discussions.
+	US - 4
+	As a CSULB student, I want to view reviews and ratings for different campus entities, so I can make informed decisions about my campus experiences.
+	US - 5
+	As a CSULB student, I want to search for reviews and ratings by named entities and categories, so I can find information about specific campus entities easily.
+	US - 6
+	As a CSULB student, I want to vote on the usefulness of polls and ratings, so I can provide feedback to the community about their relevance.
+	US - 7
+	As a CSULB student, I want to ensure that only useful polls and ratings are displayed, so I can access valuable information efficiently.
+	US - 8
+	As a CSULB student, I want to share unique links to polls and ratings, so I can easily distribute them among my peers.
+	US - 9
+	As a CSULB student, I want to configure the type of questions I post, so I can choose which question I want to display.
+	US - 10
+	As a CSULB student, I want to configure the lifetime of questions I post, so I can either delete not needed posts or crucial posts.
+	
+
+Identifier
+	US - 1
+	Purpose
+	Allow users to have an account of their own to have a more personalized experience with the application
+	Requirements
+	* User must register an account tied with their CSULB email
+* Must provide an username and password to log in
+	Development Risks
+	None
+	Pre - Conditions
+	User must not have any existing account
+	Post - Conditions
+	Allowed access to features for  registered users only 
+	
+
+
+
+Identifier
+	US - 2
+	Purpose
+	Allows users to post reviews and ratings so that their opinions are expressed to others either by a description or by assigning an arbitrary value on a scale .
+	Requirements
+	* For a review they must submit a description of the location/facility
+* For a rating they must submit a value that is on a scale of of an arbitrary #
+* If they have already submitted an review or rating of a facility/location it will overwrite the existing review or rating
+	Development Risks
+	None
+	Pre - Conditions
+	* Must be registered and is signed in 
+* Must on the rating or review feature view of the facility/location they wish to post
+	Post - Conditions
+	* Their review or rating is anonymously displayed on the facility/location 
+	
+
+Identifier
+	US - 3
+	Purpose
+	Allow user to vote in polls about campus-related topics
+	Requirements
+	* User must open the poll by clicking on it
+* User must choose one of the options and click submit for their vote to be counted
+* Results of poll immediately displayed after vote submitted
+	Development Risks
+	None
+	Pre - Conditions
+	* User must have a registered account
+* User must be logged in
+* Poll must be successfully created
+* Poll must be available for voting ie. votes should not exceed vote threshold
+	Post - Conditions
+	* Results of poll immediately displayed after user submits vote
+	
+
+Identifier
+	US - 4
+	Purpose
+	Allow user to view review and ratings for different campus entities
+	Requirements
+	* User should be able to view a list of different campus entities
+* User should be able to click a campus entity and view the entity’s reviews as well as related polls (e.g entity is an option in one of the polls)
+	Development Risks
+	None
+	Pre - Conditions
+	* User must be registered
+* User must be logged in
+* Campus Entity must be successfully created
+	Post - Conditions
+	* User should view a list of campus entities
+* On campus entity page, rating of entity, out of an arbitrary number, should be displayed
+* On campus entity page, polls made about this entity should be displayed
+	
+
+Identifier
+	US - 5
+	Purpose
+	Allow user to search for reviews and ratings for specific campus entities by named categories and entities. 
+	Requirements
+	* User should be able to search for specific entities by name. 
+* User should be able to search for specific categories and see a list of related campus entities. 
+	Development Risks
+	None
+	Pre - Conditions
+	* User must be registered. 
+* User must be logged in
+* Campus Entity must be registered 
+* Campus Entity must be registered in a category
+
+
+	Post - Conditions
+	* User should see the specific entity that they searched for. 
+* User should see a list of the entities in the category they searched for. 
+	
+
+Identifier
+	US - 6
+	Purpose
+	Allow the user to leave a vote on the usefulness of polls and ratings.
+	Requirements
+	* User should be able to like a poll if they find it useful.
+* User should be able to dislike a poll if they do not find it useful
+* User should be able to like a rating if they find it useful.
+* User should be able to dislike a rating if they do not find it useful
+	Development Risks
+	None
+	Pre - Conditions
+	* User must be registered. 
+* User must be logged in
+* Rating must be left on a registered entity
+* A poll must exist and be available to users. 
+
+
+	Post - Conditions
+	* The user’s vote should be visible on the page of the entity that the rating was left on.
+* The vote should be attached to the rating they voted on.
+* The vote should be attached to the poll they voted on.
+	
+
+Identifier
+	US - 7
+	Purpose
+	
+
+	Requirements
+	
+
+	Development Risks
+	
+
+	Pre - Conditions
+	
+
+	Post - Conditions
+	
+
+	
+
+
+
+Identifier
+	US - 8
+	Purpose
+	
+
+	Requirements
+	
+
+	Development Risks
+	
+
+	Pre - Conditions
+	
+
+	Post - Conditions
+	
+
+	
+
+
+
+Identifier
+	US - 9
+	Purpose
+	Configure the type of question based on user preference
+	Requirements
+	* User must be able to choose between a rating or polling question
+	Development Risks
+	* Limits user to only having 2 types of posts
+	Pre - Conditions
+	* User must have a internet connection
+* User must be registered with application 
+* User must be logged in
+* User must be creating a post.
+	Post - Conditions
+	* User is able to configure attributes related to the question type they selected
+* User is able to post question after filling in fields.
+	
+
+
+
+Identifier
+	US - 10
+	Purpose
+	Configure the lifetime of questions based on their type.
+	Requirements
+	* When a rating question type exceeds 50 vote threshold , the questions stays open forever
+* Polling questions remain visible forever unless deleted by the user who owns the question.
+* User can delete polling questions
+* User can delete valid rating questions
+	Development Risks
+	* Polling questions that are considered trolling or hateful and receive over 50 votes will remain on platform
+* User can’t delete rating questions if over 50 votes even if not relevant anymore
+	Pre - Conditions
+	* User must have a internet connection
+* User must be registered with application 
+* User must be logged in
+* User must either have a existing polling or rating question
+	Post - Conditions
+	* If the rating question exceeds the 50 vote threshold, the question will not be able to be deleted.
+* If user deletes polling or valid rating question, question should be deleted from view and database
+	
+
+US - 2 Course of Action
+Table 1: Typical Course of Action[a]
+Seq#
+	Actor’s Action
+	System’s Response
+	1
+	On a resource page, an authenticated user inputs a rating or review for the resource.
+	
+
+	2
+	The authenticated user selects submit to upload their rating or review.
+	
+
+	3
+	
+
+	The system processes the rating or review inputted by the student.
+	
+
+	
+
+	The accepts their input and adjusts the resource’s overall rating or displays their review.
+	
+
+	
+
+	The adjustment is updated on the resource’s page.
+	
+
+	
+
+	
+
+	
+
+Table 2: Alternate Course of Action
+Seq#
+	Actor’s Action
+	System’s Response
+	1
+	On a resource page, an authenticated user inputs a rating or review for the resource.
+	
+
+	2
+	The authenticated user selects submit to upload their rating or review.
+	
+
+	3
+	
+
+	The system processes the rating or review inputted by the student but detects they have already given a rating or review for the resource.
+	
+
+	
+
+	The system overwrites the old entry with the new review or rating of the resource
+	
+
+	
+
+	The adjustment is updated on the resource’s page.
+	
+
+	
+
+	
+
+	
+
+Table 3: Exceptional Course of Action
+Seq#
+	Actor’s Action
+	System’s Response
+	1
+	On a resource page, an authenticated user inputs a rating or review for the resource.
+	
+
+	2
+	The authenticated user selects submit to upload their rating or review.
+	
+
+	3
+	
+
+	The system processes the rating or review inputted by the student.
+	
+
+	
+
+	The system does not accept the input 
+	
+
+	
+
+	An error message will be displayed that their input was not accepted and to try again later
+	
+
+	
+
+	
+
+	
+
+/7
+
+
+
+
+[a]Need one of these for one of the user stories
