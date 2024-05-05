@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-namespace TeamSpecs.RideAlong.Middleware
+namespace Team3.ThePollProject.Middleware
 {
     public class CorsMiddleware
     {

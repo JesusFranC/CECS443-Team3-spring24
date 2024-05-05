@@ -1,4 +1,4 @@
-﻿namespace Team3.ThePollProject.Models.Response;
+namespace Team3.ThePollProject.Models.Response;
 
 public interface IResponse
 {

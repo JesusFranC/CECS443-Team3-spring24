@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using TeamSpecs.RideAlong.ConfigService.ConfigModels;
 
-namespace TeamSpecs.RideAlong.ConfigService;
+namespace Team3.ThePollProject.ConfigService;
 
 public class ConfigServiceJson : IConfigServiceJson
 {

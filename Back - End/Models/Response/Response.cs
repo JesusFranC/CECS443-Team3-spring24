@@ -1,4 +1,4 @@
-﻿using Team3.ThePollProject.Models.Response;
+using Team3.ThePollProject.Models.Response;
 
 namespace Team3.ThePollProject.Model;
 

@@ -3,9 +3,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using System.Xml.Linq;
 
 
-namespace TeamSpecs.RideAlong.Middleware
+namespace Team3.ThePollProject.Middleware
 {
     public class IDTokenValidationMiddleware
     {

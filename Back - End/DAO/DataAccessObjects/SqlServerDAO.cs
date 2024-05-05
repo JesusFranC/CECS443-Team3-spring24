@@ -1,4 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using Team3.ThePollProject.DataAccess;
 using Team3.ThePollProject.Model;
 using Team3.ThePollProject.Models.Response;
