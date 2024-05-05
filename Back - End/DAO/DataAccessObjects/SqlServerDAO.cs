@@ -1,8 +1,6 @@
-﻿using Microsoft.Data.SqlClient;
-using TeamSpecs.RideAlong.Model;
-using TeamSpecs.RideAlong.ConfigService;
-using TeamSpecs.RideAlong.ConfigService.ConfigModels;
-namespace TeamSpecs.RideAlong.DataAccess;
+﻿using Team3.ThePollProject.DataAccess;
+
+namespace Team3.ThePollProject.DAO.DataAccessObjects;
 
 public class SqlServerDAO : IGenericDAO
 {

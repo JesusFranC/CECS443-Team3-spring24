@@ -1,7 +1,6 @@
-﻿using Microsoft.Data.SqlClient;
-using TeamSpecs.RideAlong.Model;
+﻿using Team3.ThePollProject.DataAccess;
 
-namespace TeamSpecs.RideAlong.DataAccess
+namespace Team3.ThePollProject.DAO.DataAccessObjects
 {
     public class JsonFileDAO : IGenericDAO
     {

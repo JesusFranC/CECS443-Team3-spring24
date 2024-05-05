@@ -1,18 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documents2\\CSULB\\Semester6(Spring2024)\\CECS443\\CECS443-Team3-spring24\\Back - End\\",
+  "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|d:\\documents2\\csulb\\semester6(spring2024)\\cecs443\\cecs443-team3-spring24\\back - end\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\dataaccessobjects\\jsonfiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\dataaccessobjects\\jsonfiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|d:\\documents2\\csulb\\semester6(spring2024)\\cecs443\\cecs443-team3-spring24\\back - end\\controllers\\pollcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:controllers\\pollcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\dataaccessobjects\\sqlserverdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\dataaccessobjects\\sqlserverdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|d:\\documents2\\csulb\\semester6(spring2024)\\cecs443\\cecs443-team3-spring24\\back - end\\controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\igenericdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\igenericdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\ireadonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\ireadonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\ireadonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\ireadonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\iwriteonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\iwriteonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\iwriteonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\iwriteonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\models\\response\\iresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\response\\iresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IGenericDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IGenericDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\IGenericDAO.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IGenericDAO.cs",
+              "RelativeToolTip": "DAO\\IGenericDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:45:13.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IWriteOnlyFromFile.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromFile.cs",
+              "RelativeDocumentMoniker": "DAO\\IWriteOnlyFromFile.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromFile.cs",
+              "RelativeToolTip": "DAO\\IWriteOnlyFromFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:44:24.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IWriteOnlyFromDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromDataStore.cs",
+              "RelativeDocumentMoniker": "DAO\\IWriteOnlyFromDataStore.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromDataStore.cs",
+              "RelativeToolTip": "DAO\\IWriteOnlyFromDataStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:44:10.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IReadOnlyFromFile.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromFile.cs",
+              "RelativeDocumentMoniker": "DAO\\IReadOnlyFromFile.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromFile.cs",
+              "RelativeToolTip": "DAO\\IReadOnlyFromFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:43:52.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IReadOnlyFromDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromDataStore.cs",
+              "RelativeDocumentMoniker": "DAO\\IReadOnlyFromDataStore.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromDataStore.cs",
+              "RelativeToolTip": "DAO\\IReadOnlyFromDataStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:43:17.238Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RatingController.cs",
-              "DocumentMoniker": "D:\\Documents2\\CSULB\\Semester6(Spring2024)\\CECS443\\CECS443-Team3-spring24\\Back - End\\Controllers\\RatingController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RatingController.cs",
-              "ToolTip": "D:\\Documents2\\CSULB\\Semester6(Spring2024)\\CECS443\\CECS443-Team3-spring24\\Back - End\\Controllers\\RatingController.cs",
-              "RelativeToolTip": "Controllers\\RatingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Title": "JsonFileDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\JsonFileDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\DataAccessObjects\\JsonFileDAO.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\JsonFileDAO.cs",
+              "RelativeToolTip": "DAO\\DataAccessObjects\\JsonFileDAO.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAwwAYAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T18:55:42.051Z",
+              "WhenOpened": "2024-05-05T19:38:23.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PollController.cs",
-              "DocumentMoniker": "D:\\Documents2\\CSULB\\Semester6(Spring2024)\\CECS443\\CECS443-Team3-spring24\\Back - End\\Controllers\\PollController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PollController.cs",
-              "ToolTip": "D:\\Documents2\\CSULB\\Semester6(Spring2024)\\CECS443\\CECS443-Team3-spring24\\Back - End\\Controllers\\PollController.cs",
-              "RelativeToolTip": "Controllers\\PollController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Title": "SqlServerDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\SqlServerDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\DataAccessObjects\\SqlServerDAO.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\SqlServerDAO.cs",
+              "RelativeToolTip": "DAO\\DataAccessObjects\\SqlServerDAO.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAowAAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T18:54:43.16Z"
+              "WhenOpened": "2024-05-05T19:33:32.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SecurityController.cs",
-              "DocumentMoniker": "D:\\Documents2\\CSULB\\Semester6(Spring2024)\\CECS443\\CECS443-Team3-spring24\\Back - End\\Controllers\\SecurityController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SecurityController.cs",
-              "ToolTip": "D:\\Documents2\\CSULB\\Semester6(Spring2024)\\CECS443\\CECS443-Team3-spring24\\Back - End\\Controllers\\SecurityController.cs",
-              "RelativeToolTip": "Controllers\\SecurityController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "IResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\Response\\IResponse.cs",
+              "RelativeDocumentMoniker": "Models\\Response\\IResponse.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\Response\\IResponse.cs",
+              "RelativeToolTip": "Models\\Response\\IResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T18:54:16.038Z"
+              "WhenOpened": "2024-05-05T19:34:54.854Z",
+              "EditorCaption": ""
             }
           ]
         }
