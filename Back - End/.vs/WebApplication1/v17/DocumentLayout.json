@@ -1,50 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\",
+  "WorkspaceRootPath": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\dataaccessobjects\\sqlserverdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\dataaccessobjects\\sqlserverdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\services\\randomservice\\randomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:services\\randomservice\\randomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\models\\ratingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\ratingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\interfaces\\iauthusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\interfaces\\iauthusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\models\\pollingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\pollingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\model\\authusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\model\\authusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\models\\response\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\response\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\securitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\securitymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\models\\response\\iresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\response\\iresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\services\\randomservice\\irandomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:services\\randomservice\\irandomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\dataaccessobjects\\jsonfiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\dataaccessobjects\\jsonfiledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\targets\\sqlserverauthtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\targets\\sqlserverauthtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\iwriteonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\iwriteonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\interfaces\\isecuritymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\interfaces\\isecuritymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\iwriteonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\iwriteonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\ireadonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\ireadonlyfromfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\ireadonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\ireadonlyfromdatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\targets\\iauthtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\targets\\iauthtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\users\\owner\\desktop\\bluevioletusedspreadsheet\\cecs443-team3-spring24\\back - end\\dao\\igenericdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:dao\\igenericdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\model\\ridealongprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\model\\ridealongprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\model\\authnrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\model\\authnrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\model\\authenticationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\model\\authenticationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\security\\model\\appprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:security\\model\\appprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\models\\accountusermodel\\accountusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\accountusermodel\\accountusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,154 +70,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IWriteOnlyFromFile.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromFile.cs",
-              "RelativeDocumentMoniker": "DAO\\IWriteOnlyFromFile.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromFile.cs",
-              "RelativeToolTip": "DAO\\IWriteOnlyFromFile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:44:24.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IWriteOnlyFromDataStore.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromDataStore.cs",
-              "RelativeDocumentMoniker": "DAO\\IWriteOnlyFromDataStore.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IWriteOnlyFromDataStore.cs",
-              "RelativeToolTip": "DAO\\IWriteOnlyFromDataStore.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:44:10.946Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SqlServerDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\SqlServerDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\DataAccessObjects\\SqlServerDAO.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\SqlServerDAO.cs",
-              "RelativeToolTip": "DAO\\DataAccessObjects\\SqlServerDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAGAAAA",
+              "Title": "RandomService.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Services\\RandomService\\RandomService.cs",
+              "RelativeDocumentMoniker": "Services\\RandomService\\RandomService.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Services\\RandomService\\RandomService.cs",
+              "RelativeToolTip": "Services\\RandomService\\RandomService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:33:32.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JsonFileDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\JsonFileDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\DataAccessObjects\\JsonFileDAO.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\DataAccessObjects\\JsonFileDAO.cs",
-              "RelativeToolTip": "DAO\\DataAccessObjects\\JsonFileDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:38:23.456Z",
+              "WhenOpened": "2024-05-05T20:17:48.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\Response\\IResponse.cs",
-              "RelativeDocumentMoniker": "Models\\Response\\IResponse.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\Response\\IResponse.cs",
-              "RelativeToolTip": "Models\\Response\\IResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAtAAAA",
+              "Title": "IRandomService.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Services\\RandomService\\IRandomService.cs",
+              "RelativeDocumentMoniker": "Services\\RandomService\\IRandomService.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Services\\RandomService\\IRandomService.cs",
+              "RelativeToolTip": "Services\\RandomService\\IRandomService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:34:54.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T20:17:28.95Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Response.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\Response\\Response.cs",
-              "RelativeDocumentMoniker": "Models\\Response\\Response.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\Response\\Response.cs",
-              "RelativeToolTip": "Models\\Response\\Response.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Title": "SecurityManager.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\SecurityManager.cs",
+              "RelativeDocumentMoniker": "Security\\SecurityManager.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\SecurityManager.cs",
+              "RelativeToolTip": "Security\\SecurityManager.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAjwFYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:48:05.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T20:12:28.461Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PollingModel.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\PollingModel.cs",
-              "RelativeDocumentMoniker": "Models\\PollingModel.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\PollingModel.cs",
-              "RelativeToolTip": "Models\\PollingModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AuthUserModel.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AuthUserModel.cs",
+              "RelativeDocumentMoniker": "Security\\Model\\AuthUserModel.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AuthUserModel.cs",
+              "RelativeToolTip": "Security\\Model\\AuthUserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:51:55.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T20:14:10.644Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RatingModel.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\RatingModel.cs",
-              "RelativeDocumentMoniker": "Models\\RatingModel.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\Models\\RatingModel.cs",
-              "RelativeToolTip": "Models\\RatingModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "IAuthUserModel.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Interfaces\\IAuthUserModel.cs",
+              "RelativeDocumentMoniker": "Security\\Interfaces\\IAuthUserModel.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Interfaces\\IAuthUserModel.cs",
+              "RelativeToolTip": "Security\\Interfaces\\IAuthUserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:51:59.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T20:14:47.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IReadOnlyFromFile.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromFile.cs",
-              "RelativeDocumentMoniker": "DAO\\IReadOnlyFromFile.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromFile.cs",
-              "RelativeToolTip": "DAO\\IReadOnlyFromFile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "ISecurityManager.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Interfaces\\ISecurityManager.cs",
+              "RelativeDocumentMoniker": "Security\\Interfaces\\ISecurityManager.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Interfaces\\ISecurityManager.cs",
+              "RelativeToolTip": "Security\\Interfaces\\ISecurityManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:43:52.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T20:15:56.035Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "IReadOnlyFromDataStore.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromDataStore.cs",
-              "RelativeDocumentMoniker": "DAO\\IReadOnlyFromDataStore.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IReadOnlyFromDataStore.cs",
-              "RelativeToolTip": "DAO\\IReadOnlyFromDataStore.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Title": "IAuthTarget.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Targets\\IAuthTarget.cs",
+              "RelativeDocumentMoniker": "Security\\Targets\\IAuthTarget.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Targets\\IAuthTarget.cs",
+              "RelativeToolTip": "Security\\Targets\\IAuthTarget.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:43:17.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T20:14:57.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Security\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Security\\Interfaces\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T20:14:46.078Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IGenericDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IGenericDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\IGenericDAO.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\BluevioletUsedSpreadsheet\\CECS443-Team3-spring24\\Back - End\\DAO\\IGenericDAO.cs",
-              "RelativeToolTip": "DAO\\IGenericDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Title": "RideAlongPrincipal.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\RideAlongPrincipal.cs",
+              "RelativeDocumentMoniker": "Security\\Model\\RideAlongPrincipal.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\RideAlongPrincipal.cs",
+              "RelativeToolTip": "Security\\Model\\RideAlongPrincipal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T19:45:13.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T20:14:15.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthNRequest.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AuthNRequest.cs",
+              "RelativeDocumentMoniker": "Security\\Model\\AuthNRequest.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AuthNRequest.cs",
+              "RelativeToolTip": "Security\\Model\\AuthNRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T20:14:07.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthenticationRequest.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AuthenticationRequest.cs",
+              "RelativeDocumentMoniker": "Security\\Model\\AuthenticationRequest.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AuthenticationRequest.cs",
+              "RelativeToolTip": "Security\\Model\\AuthenticationRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T20:14:00.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppPrincipal.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AppPrincipal.cs",
+              "RelativeDocumentMoniker": "Security\\Model\\AppPrincipal.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Model\\AppPrincipal.cs",
+              "RelativeToolTip": "Security\\Model\\AppPrincipal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T20:13:34.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SQLServerAuthTarget.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Targets\\SQLServerAuthTarget.cs",
+              "RelativeDocumentMoniker": "Security\\Targets\\SQLServerAuthTarget.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\Targets\\SQLServerAuthTarget.cs",
+              "RelativeToolTip": "Security\\Targets\\SQLServerAuthTarget.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAhwGIAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T20:12:54.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\AuthService.cs",
+              "RelativeDocumentMoniker": "Security\\AuthService.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Security\\AuthService.cs",
+              "RelativeToolTip": "Security\\AuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T20:11:51.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountUserModel.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Models\\AccountUserModel\\AccountUserModel.cs",
+              "RelativeDocumentMoniker": "Models\\AccountUserModel\\AccountUserModel.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Models\\AccountUserModel\\AccountUserModel.cs",
+              "RelativeToolTip": "Models\\AccountUserModel\\AccountUserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T20:11:44.388Z"
             }
           ]
         }
