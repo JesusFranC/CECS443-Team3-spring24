@@ -1,8 +1,0 @@
-{
-    "ConnectionStrings": {
-        "readOnly":"Server=.\\POLLPROJECT;Database=RideAlong;User Id=Reader;Password=Reader;TrustServerCertificate=True",
-        "writeOnly":"Server=.\\POLLPROJECT;Database=RideAlong;User Id=Writer;Password=Writer;TrustServerCertificate=True",
-        "admin":"Server=.\\POLLPROJECT;Database=RideAlong;User Id=Admin;Password=Admin;TrustServerCertificate=True"
-    }
-    
-}
