@@ -1,4 +1,4 @@
-﻿namespace TeamSpecs.RideAlong.SecurityLibrary.Model
+﻿namespace Team3.ThePollProject.SecurityLibrary.Model
 {
     public class AuthNRequest
     {

@@ -1,6 +1,6 @@
 ﻿using Team3.ThePollProject.Models.Response;
 
-namespace TeamSpecs.RideAlong.SecurityLibrary.Targets
+namespace Team3.ThePollProject.SecurityLibrary.Targets
 {
     public interface IAuthTarget
     {

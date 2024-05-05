@@ -1,19 +1,18 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
+using Team3.ThePollProject.LoggingLibrary;
+using Team3.ThePollProject.Model;
 using Team3.ThePollProject.Models.Response;
-using TeamSpecs.RideAlong.LoggingLibrary;
-using TeamSpecs.RideAlong.Model;
-using TeamSpecs.RideAlong.SecurityLibrary.Interfaces;
-using TeamSpecs.RideAlong.SecurityLibrary.Model;
-using TeamSpecs.RideAlong.Services;
+using Team3.ThePollProject.SecurityLibrary.Interfaces;
+using Team3.ThePollProject.SecurityLibrary.Model;
+using Team3.ThePollProject.Services;
 
 
 
-namespace TeamSpecs.RideAlong.SecurityLibrary
+namespace Team3ThePollProject.Security
 {
     public class SecurityManager : ISecurityManager
     {

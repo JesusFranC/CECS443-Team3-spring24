@@ -1,14 +1,15 @@
 ﻿
 using Microsoft.Data.SqlClient;
 using System.Data;
+using Team3.ThePollProject.DataAccess;
+using Team3.ThePollProject.LoggingLibrary;
+using Team3.ThePollProject.Model;
 using Team3.ThePollProject.Models.Response;
-using TeamSpecs.RideAlong.DataAccess;
-using TeamSpecs.RideAlong.LoggingLibrary;
-using TeamSpecs.RideAlong.Model;
-using TeamSpecs.RideAlong.SecurityLibrary.Interfaces;
-using TeamSpecs.RideAlong.SecurityLibrary.Model;
+using Team3.ThePollProject.SecurityLibrary.Interfaces;
+using Team3.ThePollProject.SecurityLibrary.Targets;
+using Team3.ThePollProject.SecurityLibrary.Model;
 
-namespace TeamSpecs.RideAlong.SecurityLibrary.Targets
+namespace Team3.ThePollProject.SecurityLibrary.Targets
 {
 
     public class SQLServerAuthTarget : IAuthTarget

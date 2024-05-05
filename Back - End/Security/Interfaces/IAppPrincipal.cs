@@ -1,4 +1,4 @@
-﻿namespace TeamSpecs.RideAlong.SecurityLibrary.Interfaces
+﻿namespace Team3.ThePollProject.SecurityLibrary.Interfaces
 {
     public interface IAppPrincipal
     {

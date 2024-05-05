@@ -1,12 +1,12 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using Team3.ThePollProject.Models.Response;
-using TeamSpecs.RideAlong.LoggingLibrary;
-using TeamSpecs.RideAlong.Model;
-using TeamSpecs.RideAlong.SecurityLibrary.Interfaces;
-using TeamSpecs.RideAlong.SecurityLibrary.Model;
-using TeamSpecs.RideAlong.SecurityLibrary.Targets;
+using Team3.ThePollProject.LoggingLibrary;
+using Team3.ThePollProject.Model;
+using Team3.ThePollProject.SecurityLibrary.Interfaces;
+using Team3.ThePollProject.SecurityLibrary.Targets;
+using Team3.ThePollProject.SecurityLibrary.Model;
 
-namespace TeamSpecs.RideAlong.SecurityLibrary;
+namespace Team3.ThePollProject.Security;
 
 public class AuthService : IAuthService
 {

@@ -1,4 +1,4 @@
-﻿using TeamSpecs.RideAlong.ConfigService.ConfigModels;
+﻿using Team3.ThePollProject.ConfigService.ConfigModels;
 
 namespace Team3.ThePollProject.ConfigService;
 

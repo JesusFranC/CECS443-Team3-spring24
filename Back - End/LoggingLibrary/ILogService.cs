@@ -1,5 +1,6 @@
 ﻿
 using Team3.ThePollProject.Models;
+using Team3.ThePollProject.Models.Response;
 
 namespace Team3.ThePollProject.LoggingLibrary
 {

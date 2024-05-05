@@ -1,6 +1,6 @@
-﻿using TeamSpecs.RideAlong.SecurityLibrary.Interfaces;
+﻿using Team3.ThePollProject.SecurityLibrary.Interfaces;
 
-namespace TeamSpecs.RideAlong.SecurityLibrary.Model
+namespace Team3.ThePollProject.SecurityLibrary.Model
 {
     public class RideAlongPrincipal : IAppPrincipal
     {

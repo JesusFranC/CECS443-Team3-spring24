@@ -4,7 +4,9 @@ using Microsoft.Data.SqlClient;
 using Team3.ThePollProject.DAO;
 using Team3.ThePollProject.DataAccess;
 using Team3.ThePollProject.LoggingLibrary;
+using Team3.ThePollProject.Model;
 using Team3.ThePollProject.Models;
+using Team3.ThePollProject.Models.Response;
 
 public class SqlDbLogTarget : ILogTarget
 {
