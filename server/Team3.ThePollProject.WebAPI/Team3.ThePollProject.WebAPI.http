@@ -1,0 +1,6 @@
+@Team3.ThePollProject.WebAPI_HostAddress = http://localhost:5098
+
+GET {{Team3.ThePollProject.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
