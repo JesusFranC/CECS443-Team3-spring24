@@ -2,11 +2,15 @@
 
 namespace Team3.ThePollProject.Controllers
 {
+    [Route("[controller]")]
     public class RatingController : Controller
     {
-        public IActionResult Index()
+
+        [HttpPost]
+        [Route("postPoll")]
+        public IActionResult postNewPoll()
         {
-            return View();
+            return Ok();
         }
     }
 }
