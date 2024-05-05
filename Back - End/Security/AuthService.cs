@@ -1,4 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using Team3.ThePollProject.Models.Response;
 using TeamSpecs.RideAlong.LoggingLibrary;
 using TeamSpecs.RideAlong.Model;
 using TeamSpecs.RideAlong.SecurityLibrary.Interfaces;

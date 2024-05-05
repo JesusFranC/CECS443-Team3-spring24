@@ -1,4 +1,4 @@
-﻿using TeamSpecs.RideAlong.Model;
+﻿using Team3.ThePollProject.Models.Response;
 using TeamSpecs.RideAlong.SecurityLibrary.Model;
 namespace TeamSpecs.RideAlong.SecurityLibrary.Interfaces
 {

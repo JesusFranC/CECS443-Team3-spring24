@@ -1,4 +1,4 @@
-﻿using TeamSpecs.RideAlong.Model;
+﻿using Team3.ThePollProject.Models.Response;
 
 namespace TeamSpecs.RideAlong.SecurityLibrary.Targets
 {

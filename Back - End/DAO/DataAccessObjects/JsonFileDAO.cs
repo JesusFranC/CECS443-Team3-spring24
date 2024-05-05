@@ -1,4 +1,5 @@
 ﻿using Team3.ThePollProject.DataAccess;
+using Team3.ThePollProject.Model;
 
 namespace Team3.ThePollProject.DAO.DataAccessObjects
 {

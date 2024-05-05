@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.Data.SqlClient;
 using System.Data;
+using Team3.ThePollProject.Models.Response;
 using TeamSpecs.RideAlong.DataAccess;
 using TeamSpecs.RideAlong.LoggingLibrary;
 using TeamSpecs.RideAlong.Model;
