@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Team3.ThePollProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57df908db2b4f1125b310b40c890b8020cb8f939")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9faf7a5a8526c146ae711a3cfebbeefffdbf9cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Team3.ThePollProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Team3.ThePollProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

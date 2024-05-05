@@ -331,4 +331,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+Back - End/obj/Release/net8.0/Team3.ThePollProject.AssemblyInfoInputs.cache
+Back - End/obj/Release/net8.0/Team3.ThePollProject.AssemblyInfo.cs
+Back - End/obj/Debug/net8.0/Team3.ThePollProject.AssemblyInfoInputs.cache
+Back - End/obj/Debug/net8.0/Team3.ThePollProject.AssemblyInfo.cs
+
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,aspnetcore,visualstudiocode,react
