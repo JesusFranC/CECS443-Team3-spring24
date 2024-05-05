@@ -1,8 +1,11 @@
 ﻿namespace TeamSpecs.RideAlong.LoggingLibrary;
 
 using Microsoft.Data.SqlClient;
-using TeamSpecs.RideAlong.DataAccess;
-using TeamSpecs.RideAlong.Model;
+using Team3.ThePollProject.DAO;
+using Team3.ThePollProject.DataAccess;
+using Team3.ThePollProject.LoggingLibrary;
+using Team3.ThePollProject.Models;
+
 public class SqlDbLogTarget : ILogTarget
 {
     private readonly IGenericDAO _dao;

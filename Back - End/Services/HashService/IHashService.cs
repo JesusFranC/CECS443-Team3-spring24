@@ -1,4 +1,4 @@
-﻿namespace TeamSpecs.RideAlong.Services;
+﻿namespace Team3.ThePollProject.Services;
 
 public interface IHashService
 {

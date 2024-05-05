@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace TeamSpecs.RideAlong.Services;
+namespace Team3.ThePollProject.Services;
 
 public class HashService : IHashService
 {

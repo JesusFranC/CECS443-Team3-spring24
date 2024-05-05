@@ -1,4 +1,7 @@
-﻿using Team3.ThePollProject.DataAccess;
+﻿using Microsoft.Data.SqlClient;
+using Team3.ThePollProject.DataAccess;
+using Team3.ThePollProject.Models;
+
 
 namespace Team3.ThePollProject.DAO.DataAccessObjects;
 

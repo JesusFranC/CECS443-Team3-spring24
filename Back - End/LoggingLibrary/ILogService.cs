@@ -1,4 +1,6 @@
 ﻿
+using Team3.ThePollProject.Models;
+
 namespace Team3.ThePollProject.LoggingLibrary
 {
     public interface ILogService
