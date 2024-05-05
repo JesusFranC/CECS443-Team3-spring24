@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Team3.ThePollProject.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca41ef5a47c61d78a2df02e5d76cf45bdd11d2a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d4102438e2a3634d5e05f9adfaaf431e73280cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Team3.ThePollProject.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Team3.ThePollProject.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
