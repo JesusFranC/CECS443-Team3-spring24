@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
-using Team3.ThePollProject.Models; // Import your poll model namespace
+using Team3.ThePollProject.Models; // Import your model namespace
 
 namespace Team3.ThePollProject.Controllers
 {
@@ -18,7 +19,7 @@ namespace Team3.ThePollProject.Controllers
 
         // GET: api/Poll/{id}
         [HttpGet("{id}")]
-        public IActionResult GetPoll(int id)
+        public IActionResult GetPoll(long id)
         {
             // Implement logic to fetch poll by id
             return Ok();
@@ -26,15 +27,15 @@ namespace Team3.ThePollProject.Controllers
 
         // POST: api/Poll
         [HttpPost]
-        public IActionResult CreatePoll()
+        public IActionResult CreatePoll([FromBody] PollingModel poll)
         {
             // Implement logic to create a new poll
-            return Ok();
+            return CreatedAtAction(nameof(GetPoll), new { id = poll.PollID }, poll);
         }
 
         // PUT: api/Poll/{id}
         [HttpPut("{id}")]
-        public IActionResult UpdatePoll()
+        public IActionResult UpdatePoll(long id, [FromBody] PollingModel poll)
         {
             // Implement logic to update an existing poll
             return NoContent();
@@ -42,11 +43,10 @@ namespace Team3.ThePollProject.Controllers
 
         // DELETE: api/Poll/{id}
         [HttpDelete("{id}")]
-        public IActionResult DeletePoll(int id)
+        public IActionResult DeletePoll(long id)
         {
             // Implement logic to delete a poll by id
             return NoContent();
         }
     }
 }
-
