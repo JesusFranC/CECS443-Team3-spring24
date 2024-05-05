@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\WebApplication1\\Team3.ThePollProject.csproj": {}
+    "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Team3.ThePollProject.csproj": {}
   },
   "projects": {
-    "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\WebApplication1\\Team3.ThePollProject.csproj": {
+    "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Team3.ThePollProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\WebApplication1\\Team3.ThePollProject.csproj",
+        "projectUniqueName": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Team3.ThePollProject.csproj",
         "projectName": "Team3.ThePollProject",
-        "projectPath": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\WebApplication1\\Team3.ThePollProject.csproj",
+        "projectPath": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Team3.ThePollProject.csproj",
         "packagesPath": "C:\\Users\\jmich\\.nuget\\packages\\",
-        "outputPath": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\WebApplication1\\obj\\",
+        "outputPath": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jmich\\AppData\\Roaming\\NuGet\\NuGet.Config",

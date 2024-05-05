@@ -1,12 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\WebApplication1\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\team3.thepollproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:team3.thepollproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\models\\pollingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\pollingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|c:\\491a_teamspec\\cecs443-team3-spring24\\back - end\\models\\ratingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5766A02-5438-45A7-8E49-888C0BCF0DA5}|Team3.ThePollProject.csproj|solutionrelative:models\\ratingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Team3.ThePollProject",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Team3.ThePollProject.csproj",
+              "RelativeDocumentMoniker": "Team3.ThePollProject.csproj",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Team3.ThePollProject.csproj",
+              "RelativeToolTip": "Team3.ThePollProject.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-05T04:09:06.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PollingModel.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Models\\PollingModel.cs",
+              "RelativeDocumentMoniker": "Models\\PollingModel.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Models\\PollingModel.cs",
+              "RelativeToolTip": "Models\\PollingModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T04:08:08.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RatingModel.cs",
+              "DocumentMoniker": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Models\\RatingModel.cs",
+              "RelativeDocumentMoniker": "Models\\RatingModel.cs",
+              "ToolTip": "C:\\491A_TeamSpec\\CECS443-Team3-spring24\\Back - End\\Models\\RatingModel.cs",
+              "RelativeToolTip": "Models\\RatingModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T04:07:42.33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
