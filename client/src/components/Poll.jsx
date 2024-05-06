@@ -1,24 +1,26 @@
-import React, { useState, useEffect }  from 'react'
+import React, { useState, useEffect, useContext }  from 'react'
+import { AuthContext } from '../context/AuthProvider';
 
 //USE CASE #4: I want to view reviews and ratings for different campus entities, so
 //I can make informed decisions about my campus experiences.
-export const Poll = ({ Title, description, maxVotes, pollOptions = [], UserAccount_UID }) => {
+export const Poll = ({ Title, description, maxVotes, pollOptions = [] }) => {
+  //for pollingModel
+  //FIXME: To-DO: 
+  //1. persistence = get user from context
+  //2. handleVote = send poll response to backend
+  //3. button - mark as selected
+  //4. Limit vote to 1 per user
+  const PollID = '1234';
+  const {authUser, setAuthUser} = useContext(AuthContext);
+  const [user, setUserDetails] = useState(null);
+  const createdAt = new Date();
+
   //FIXME: hardcoded values for now
   Title = 'Best convenience store?'
   description = 'just curious wat u guys think?? evaluating based on their snack options and how stocked they are.'
   maxVotes = 10
   pollOptions = ['Outpost Convenience Store', 'Bookstore Convenience Store', 'Caffiene Lab', 'WallStrEAT Cafe']
   
-  //for pollingModel
-  //FIXME: To-DO: 
-  //1. persistence = get user from context
-  //2. handleVote = send poll response to backend
-  //3. button - mark as selected
-  const PollID = '1234';
-  UserAccount_UID = 'user_123';
-  const [user, setUserDetails] = useState(null);
-  const createdAt = new Date();
-
   const handleVote = (e) => {
     e.preventDefault();
     console.log('voted: ', e.target.textContent);

@@ -16,6 +16,14 @@
     bg-light-grey-2 hover:bg-light-grey-1-hover
     rounded-3xl;
   }
+  .btn-register {
+    @apply flex text-base 
+    font-semibold
+    items-center 
+    p-2 px-10 m-1 
+    bg-lbsu-yellow hover:bg-dark-gold
+    rounded-lg;
+  }
 }
 
 
