@@ -1,6 +1,6 @@
-﻿using TeamSpecs.RideAlong.Model;
+﻿using Team3.ThePollProject.Model;
 
-namespace TeamSpecs.RideAlong.SecurityLibrary
+namespace Team3.ThePollProject.SecurityLibrary
 {
     public class AuthenticationRequest
     {

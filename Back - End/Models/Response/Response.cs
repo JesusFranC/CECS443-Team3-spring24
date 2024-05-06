@@ -1,4 +1,6 @@
-﻿namespace TeamSpecs.RideAlong.Model;
+using Team3.ThePollProject.Models.Response;
+
+namespace Team3.ThePollProject.Model;
 
 public class Response : IResponse
 {

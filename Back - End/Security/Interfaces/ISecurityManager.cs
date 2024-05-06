@@ -1,6 +1,8 @@
-﻿using TeamSpecs.RideAlong.Model;
-using TeamSpecs.RideAlong.SecurityLibrary.Model;
-namespace TeamSpecs.RideAlong.SecurityLibrary.Interfaces
+﻿using Team3.ThePollProject.Models.Response;
+using Team3.ThePollProject.SecurityLibrary.Interfaces;
+using Team3.ThePollProject.SecurityLibrary.Model;
+
+namespace Team3ThePollProject.Security
 {
     public interface ISecurityManager
     {

@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text.Json.Serialization;
 
-namespace TeamSpecs.RideAlong.ConfigService.ConfigModels;
+namespace Team3.ThePollProject.ConfigService.ConfigModels;
 
 public sealed class ConnectionStrings
 {
