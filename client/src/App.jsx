@@ -3,6 +3,7 @@ import './css/style.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Poll from './components/Poll';
 import Home from './pages/Home';
+import RegisterForm from './components/RegisterForm';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/poll" element={<Poll />} />
+        <Route path="/register" element={<RegisterForm />} />
       </Routes>
     </Router>
   )
