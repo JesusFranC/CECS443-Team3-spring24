@@ -3,5 +3,6 @@
     public interface IPoll
     {
         string title { get; set; }
+
     }
 }
