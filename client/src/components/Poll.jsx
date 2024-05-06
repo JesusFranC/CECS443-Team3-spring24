@@ -5,16 +5,17 @@ import React, { useState, useEffect }  from 'react'
 export const Poll = ({ title, description, maxVotes, pollOptions = [] }) => {
   title = 'What is your favorite food?'
   description = 'We are trying to decide what to serve at the next event.'
-  maxVotes = 4
-
+  maxVotes = 5
   pollOptions = ['Pizza', 'Tacos', 'Burgers', 'Salad']
+
   return (
-    <div className="font-sans flex justify-start bg-lbsu-yellow max-w-[240px] max-h-[135px]">
-      <h3 className='text-xl font-bold'>{title}</h3>
+    <div className="font-sans flex justify-center w-[520px] h-[586px] bg-red">
+      <h3 className='text-xl text-bold'>{title}</h3>
       <p className='text-sm'>{description}</p>
       <p className='text-sm'>Max Votes: {maxVotes}</p>
       {pollOptions.map((option, i) => (
         <div key={i} className='flex items-center'>
+          
           <input type='checkbox' />
           <label>{option}</label>
         </div>
