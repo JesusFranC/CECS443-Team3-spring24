@@ -13,17 +13,24 @@ export const Poll = ({ Title, description, maxVotes, pollOptions = [], UserAccou
   UserAccount_UID = 'user_123';
   const createdAt = new Date();
 
+  const handleVote = (e) => {
+    e.preventDefault();
+    console.log('voted: ', e.target.textContent);
+    //TODO: send poll response to backend
+  }
+
+
   return (
     <div className="font-sans w-[520px] h-[586px] bg-light-grey-1 rounded-2xl">
       <div className="flex flex-col pt-20 px-12">
         <h3 className='text-3xl font-semibold pb-4'>{Title}</h3>
         <p className='text-sm py-4'>{description}</p>
-        <form className='flex flex-col'>
-        {pollOptions.map((option, i) => (
-          <button key={i} className='btn-poll' type='submit'>
-            <label className='px-3'>{option}</label>
-          </button>
-        ))}
+        <form className='flex flex-col' onSubmit={handleVote}>
+          {pollOptions.map((option, i) => (
+            <button key={i} className='btn-poll' type='submit'>
+              <label className='px-3'>{option}</label>
+            </button>
+          ))}
         </form>
         <p className='text-sm py-4'>Max Votes: {maxVotes}</p>
         <div className='w-16 h-1.5 mt-3 bg-lbsu-blue rounded-lg'></div>
