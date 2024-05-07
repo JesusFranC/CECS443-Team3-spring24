@@ -30,6 +30,7 @@ export default {
 
         //greys
         "off-white": "#eaeaea",
+        "input-white": "#FDF8F8",
         "light-grey-1": "#F8F8F8",
         "light-grey-1-hover": "#CAC9CC",
         "light-grey-2": "#E5E3E8",

@@ -1,16 +1,25 @@
 import React from 'react'
+import RegisterForm from '../components/RegisterForm'
+
+import lblogo from '../assets/lblogo.png'
 
 export const Home = () => {
   return (
-    <div> this is the home page
-      <div> Rating and Polling </div>
-      <div> California State University, Long Beach</div>
-      <div>For active CSULB students, faculty only*</div>
-      <div>Register for Rating and Polling</div>
-      <div>Enter your password</div>
-      <div>Enter your campus email</div>
-      <div>Register</div>
-      <div>Already have an account? Login </div>
+    <div>
+      <div className='flex items-start mb-4 p-8'> 
+      {/* left container */}
+        <div className='flex-auto flex flex-col justify-center items-center pt-30 w-1/2 h-sceen m-1 p-4'>
+            <img src={lblogo} alt='LB State Logo' className='w-1/4 h-1/4 m-10'/>
+            <h1 className='text-3xl font-semibold pb-4 text-black'>Rating and Polling</h1>
+            <p className='text-lg  text-black'>California State University, Long Beach</p>
+            <p className='text-md  text-black italic'>For active CSULB students, faculty only*</p>
+        </div>
+        {/* right container */}
+        <div className='flex-col w-1/2 h-screen'>
+          <RegisterForm />
+        </div>
+      </div>
+      
     </div>
     
 

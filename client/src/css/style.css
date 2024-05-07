@@ -24,6 +24,15 @@
     bg-lbsu-yellow hover:bg-dark-gold
     rounded-lg;
   }
+
+  .field-input {
+    @apply flex items-center 
+    m-auto w-[310px] h-[50px] 
+    bg-white
+    rounded-md 
+    p-[14px] 
+    focus:outline-none
+  }
 }
 
 
