@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from 'react'
-
+import { useNavigate } from 'react-router-dom';
 
 //USE CASE #1: I want to be able to As a registered user, I want to log in
 // securely so that I cannot be held responsible for someone else’s actions, so I can ensure the security of my account.
@@ -10,6 +10,7 @@ export const RegisterForm = () => {
     const [password2, setPassword2] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     
+    const navigate = useNavigate(); //for redirects
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('submitted: ', username, password);
@@ -71,7 +72,7 @@ export const RegisterForm = () => {
                 className="btn-register">
                 Register
             </button>
-            <a className='text-sm py-4 italic underline' href='/'>Already have an account? Login</a>
+            <a className='text-sm py-4 italic hover:underline' href='/'>Already have an account? Login</a>
         </div>
         
       </form>
