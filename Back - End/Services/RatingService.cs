@@ -90,7 +90,7 @@ namespace Team3.ThePollProject.Services
                 // Log error message
                 _logService.CreateLogAsync("Info", "Data", "Failed to retrieve rating with ID {id} along with corresponding votes: {ex.Message}", null);
                 response.HasError = true;
-                response.ErrorMessage = $"Failed to retrieve poll with ID {id} along with corresponding votes.";
+                response.ErrorMessage = $"Failed to retrieve rating with ID {id} along with corresponding votes.";
                 return response;
             }
         }
@@ -151,6 +151,53 @@ namespace Team3.ThePollProject.Services
             }
             response.HasError = false;
             return response;
+        }
+
+        public IResponse DeleteRating(long id)
+        {
+            // Call a method from data access layer to delete the rating by ID
+            // Log any relevant information using _logService
+            // Return an IResponse object with the fetched rating or any error message
+
+            IResponse response = new Response();
+
+            try
+            {
+                // Generate SqlCommand to select a rating by ID and corresponding votes should delete on cascade
+                var sqlCommand = @"
+                    DELETE FROM Ratings WHERE RatingID = @RatingID
+                ";
+
+                var parameters = new HashSet<SqlParameter>
+                {
+                    new SqlParameter("@RatingID",id)
+                };
+
+
+                var sqlCommands = new List<KeyValuePair<string, HashSet<SqlParameter>?>>();
+                sqlCommands.Add(new KeyValuePair<string, HashSet<SqlParameter>?>(sqlCommand, parameters));
+
+                // Call data access layer method to execute the command
+                var daoValue = _dao.ExecuteWriteOnly(sqlCommands);
+                response.ReturnValue = new List<object>()
+                {
+                    daoValue
+                };
+
+                // Log success message
+                _logService.CreateLogAsync("Info", "Data", "Deleted rating with ID {id} along with corresponding votes successfully.", null);
+
+                response.HasError = false;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                // Log error message
+                _logService.CreateLogAsync("Info", "Data", "Failed to delete rating with ID {id} along with corresponding votes: {ex.Message}", null);
+                response.HasError = true;
+                response.ErrorMessage = $"Failed to delete rating with ID {id} along with corresponding votes.";
+                return response;
+            }
         }
     }
 }
