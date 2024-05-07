@@ -1,15 +1,14 @@
 import React, { useState, useEffect }  from 'react'
 
-//USE CASE #1: As a registered user, I want to log in
+// USE CASE #1: As a registered user, I want to log in
 // securely so that I cannot be held responsible for 
 // someone else’s actions, so I can ensure the security of my account.
-export const RegisterForm = () => {
+export const LoginForm = () => {
     //declare variables for form fields
     const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');   
-    const [password2, setPassword2] = useState('');
+    const [password, setPassword] = useState(''); 
     const [showPassword, setShowPassword] = useState(false);
-    
+
     const handleSubmit = (e) => {
         e.preventDefault();
         //Implement submitting form data to the server
@@ -21,22 +20,18 @@ export const RegisterForm = () => {
             alert('Please fill out all fields');
             return false;
         }
-        if (password !== password2) {
-            alert('Passwords do not match');
-            return false;
-        }
         return true;
     }
 
   return (
     <div className="font-sans min-w-[500px] min-h[586px] bg-light-grey-1 rounded-2xl">
     <div className="flex flex-col items-center pt-28 px-12">
-      <h3 className='text-3xl font-semibold pb-4'>Register for Rating and Polling</h3>
+      <h3 className='text-3xl font-semibold pb-1'>Login</h3>
       <form className='justify-start py-10' onSubmit={handleSubmit}> {/* form*/}
         <div className="pb-2"> {/* field*/}
             <input type="text"
             name='username'
-            placeholder="Enter your username"
+            placeholder="Username"
             onChange={(e) => setUsername(e.target.value)}
             className="field-input"
             />
@@ -47,20 +42,9 @@ export const RegisterForm = () => {
                     showPassword ? "text" : "password"
                 }
                 name='password'
-                placeholder="Enter your password"
+                placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="field-input"
-            />
-        </div>
-        <div className='pb-4'>
-            <input 
-                type={
-                    showPassword ? "text" : "password"
-                }
-                name='password'
-                placeholder="Confirm your password"
-                onChange={(e) => setPassword2(e.target.value)}
                 className="field-input"
             />
         </div>
@@ -73,9 +57,9 @@ export const RegisterForm = () => {
         <div className='flex flex-col items-center justify-center m-2 overflow-auto py-4'>
             <button type="submit" onClick={() => {validateForm()}}
                 className="btn-register">
-                Register
+                Login
             </button>
-            <a className='text-sm py-4 italic hover:underline' href='/login'>Already have an account? Login</a>
+            <a className='text-sm py-4 italic hover:underline' href='/'>Don't have an account? Register</a>
         </div>
         
       </form>
@@ -84,4 +68,4 @@ export const RegisterForm = () => {
   )
 }
 
-export default RegisterForm
+export default LoginForm
