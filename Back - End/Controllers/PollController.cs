@@ -35,9 +35,7 @@ namespace Team3.ThePollProject.Controllers
             }
             else if (response.HasError == false)
             {
-                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
-
-                return Ok(JsonRatings);
+                return Ok(response.ReturnValue);
             }
             else
             {
@@ -70,26 +68,22 @@ namespace Team3.ThePollProject.Controllers
 
         // POST: api/Poll
         [HttpPost]
-        public IActionResult CreatePoll(string title, string description, string[] pollOptions)
+        public IActionResult CreatePoll([FromBody] PollingModel poll)
         {
-            IResponse response;
-            IAppPrincipal principal = _securityManager.JwtToPrincipal();
-            IAccountUserModel user = new AccountUserModel(principal.userIdentity.userName);
-            user.UserId = principal.userIdentity.UID;
-            user.UserHash = principal.userIdentity.userHash;
-
-
-            response = _pollingService.CreatePoll(user.UserId, title, description, pollOptions);
-
-            if (response.HasError == true)
+            IResponse response = new Response();
+            try
             {
-                return BadRequest();
+                IAppPrincipal principal = _securityManager.JwtToPrincipal();
+                _pollingService.CreatePoll(principal.userIdentity.UID, poll.Title, poll.Description, poll.Option1, poll.Option2);
             }
-            else if (response.HasError == false)
+            catch
             {
-                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
+                _pollingService.CreatePoll(0, poll.Title, poll.Description, poll.Option1, poll.Option2);
+            }
 
-                return Ok(JsonRatings);
+            if (response.HasError)
+            {
+                return BadRequest(response.ErrorMessage);
             }
             else
             {
@@ -127,6 +121,16 @@ namespace Team3.ThePollProject.Controllers
                 return Ok("The specific poll found and deleted");
             }
         }
+        [HttpPost]
+        [Route("VoteOnPoll")]
+        public IActionResult PostVote(IVote vote)
+        {
+            if (vote == null)
+            {
+                return BadRequest("No Vote Provided");
+            }
+            // TODO: Implement Post Vote
+            return Ok("Voting posted");
+        }
     }
-
 }

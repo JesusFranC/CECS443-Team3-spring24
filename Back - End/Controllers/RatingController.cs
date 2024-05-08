@@ -34,7 +34,7 @@ namespace Team3.ThePollProject.Controllers
             // Implement logic to fetch all ratings
             IResponse response;
             IAppPrincipal principal = _securityManager.JwtToPrincipal();
-            IAccountUserModel user = new AccountUserModel(principal.userIdentity.userName);
+            IAccountUserModel user = new AccountUserModel(principal.userIdentity.userName!);
             user.UserId = principal.userIdentity.UID;
             user.UserHash = principal.userIdentity.userHash;
 

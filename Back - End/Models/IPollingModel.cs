@@ -2,11 +2,11 @@
 {
     public interface IPollingModel
     {
-        long PollID { get; set; }
+        long? PollID { get; set; }
         long UserAccount_UID { get; set; }
         string Title { get; set; }
         string Description { get; set; }
         DateTime TimeOpen { get; set; }
-        string Options { get; set; }
+        string Option1 { get; set; }
     }
 }

@@ -13,23 +13,23 @@ namespace Team3.ThePollProject.Controllers
     {
         private readonly IRegistrationService _registrationService;
 
-        public RegisterationController(IRegistrationService registrationService) 
-        { 
+        public RegisterationController(IRegistrationService registrationService)
+        {
             _registrationService = registrationService;
         }
 
         // POST api/<RegisterationController>
         [HttpPost]
         [Route("Register")]
-        public IActionResult Post([FromBody]string email)
+        public IActionResult Post([FromBody] string email)
         {
             IResponse response = new Response();
 
             response = _registrationService.MakeUser(email);
 
-            if(response.HasError)
+            if (response.HasError)
             {
-                return BadRequest("dick and balls");
+                return BadRequest();
             }
 
             return Ok();
