@@ -35,18 +35,18 @@ export const RegisterForm = () => {
         } catch (error) {
             console.log('Error in registration: ', error);
         }
-        console.log('submitted: ', username, password);
+        console.log('submitted: ', email, username, password);
     }
 
     const validateForm = () => {
-        // if (username === '' || password === '') {
-        //     alert('Please fill out all fields');
-        //     return false;
-        // }
-        // if (password !== password2) {
-        //     alert('Passwords do not match');
-        //     return false;
-        // }
+        if (username === '' || password === '') {
+            alert('Please fill out all fields');
+            return false;
+        }
+        if (password !== password2) {
+            alert('Passwords do not match');
+            return false;
+        }
         return true;
     }
 
