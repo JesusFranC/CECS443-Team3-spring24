@@ -27,7 +27,8 @@ export const RegisterForm = () => {
                     body: JSON.stringify(email) //FIXME: add username, password
                 });
                 if (response.ok) {
-                    console.log('User registered', {email, username, password});
+                    console.log('User registered', {email});
+                    e.target.reset(); 
                 } else {
                     alert('Registration failed. Please try again.');
                 }

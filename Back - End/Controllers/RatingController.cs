@@ -56,6 +56,31 @@ namespace Team3.ThePollProject.Controllers
             }
         }
 
+        [HttpGet]
+        public IActionResult GetEntities()
+        {
+            // Implement logic to fetch all ratings
+            IResponse response;
+
+
+            response = _ratingService.GetEntities();
+
+            if (response.HasError == true)
+            {
+                return BadRequest();
+            }
+            else if (response.HasError == false)
+            {
+                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
+
+                return Ok(JsonRatings);
+            }
+            else
+            {
+                return Ok("No ratings found");
+            }
+        }
+
         // GET: api/Rating/{id}
         [HttpGet("{id}")]
         public IActionResult GetRating(int id)
@@ -87,7 +112,7 @@ namespace Team3.ThePollProject.Controllers
 
         // POST: api/Rating
         [HttpPost]
-        public IActionResult CreateRating(string title, string description)
+        public IActionResult CreateRating(long EntityID, string title, string description)
         {
             // Implement logic to create a new rating
             IResponse response;
@@ -97,7 +122,7 @@ namespace Team3.ThePollProject.Controllers
             user.UserHash = principal.userIdentity.userHash;
 
 
-            response = _ratingService.CreateRating(user.UserId, title, description);
+            response = _ratingService.CreateRating(user.UserId, EntityID, title, description);
 
             if (response.HasError == true)
             {
