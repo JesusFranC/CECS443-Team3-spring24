@@ -21,23 +21,40 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
   description = 'just curious wat u guys think?? evaluating based on their snack options and how stocked they are.'
   pollOptions = ['Outpost Convenience Store', 'Bookstore Convenience Store', 'Caffiene Lab', 'WallStrEAT Cafe']
 
-  // const handleVote = (selectedOption) => async (e) => {
-  //   e.preventDefault();
-  //   console.log('in handleVote');
-  //   if (validateForm()) {
-  //     setVoted(true);
-  //     setSelectedOption(`${e.target.value}`);
-  //     console.log('voted', selectedOption)
-  //   } 
-  // }
-  const handleVote = async (option) => {
+  const handleVote = (event, option) => {
+    event.preventDefault();
     console.log('in handleVote');
     if (validateForm()) {
       setSelectedOption(option);
       console.log('voted', option)
       setVoted(true);
+      handlePostVote(event);
     } 
   }
+
+  const handlePostVote = async (e) => {
+    e.preventDefault();
+    //Implement submitting poll data to the server
+    const url = 'http://localhost:5206/Registeration/Register'; //FIXME: Replace with URL for posting user vote
+    try {
+        console.log('In Handle post vote');
+        const response = await fetch (url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({selectedOption}) 
+        });
+        if (response.ok) {
+            console.log('Vote posted', {selectedOption});
+        } else {
+            alert('Voting failed. Please try again.');
+        }
+    } catch (error) {
+        console.log('Error in poll voting: ', error);
+    }
+    console.log('voted: ', selectedOption);
+}
 
   const validateForm = () => {
     if (voted === true) {
@@ -54,13 +71,14 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
         <p className='text-sm py-4'>{description}</p>
         <form className='flex flex-col' >
           {pollOptions.map((option, i) => (
-            <button key={i} className='btn-poll' type='submit' onClick={() => handleVote(option)}>
+            <button key={i} className='btn-poll' type='submit' onClick={(event) => handleVote(event, option)}>
               <label className='px-3'>{option}</label>
             </button>
           ))}
         </form>
         <div className='w-16 h-1.5 mt-3 bg-lbsu-blue rounded-lg'></div>
         <p className='text-sm py-3 italic'>Posted on {createdAt.toLocaleString()}</p>
+        <p className='text-sm py-3 italic'>You voted for: {selectedOption}</p>
       </div>
     </div>
     
