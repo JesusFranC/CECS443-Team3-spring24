@@ -72,11 +72,6 @@ namespace Team3.ThePollProject.Services
                 new KeyValuePair<string, HashSet<SqlParameter>?>(createUserClaimSql, createUserClaimParams)
             });
 
-            if (response.HasError = true)
-            {
-                return response;
-            }
-
             response.HasError = false;
             return response;
         }
