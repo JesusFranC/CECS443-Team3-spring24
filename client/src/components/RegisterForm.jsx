@@ -15,7 +15,7 @@ export const RegisterForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         //Implement submitting form data to the server
-        const url = 'http://localhost:5000/api/Poll';
+        const url = 'http://localhost:5206/api/registration';
         try {
             if (validateForm()) {
                 console.log('Form is valid');
@@ -35,7 +35,7 @@ export const RegisterForm = () => {
         } catch (error) {
             console.log('Error in registration: ', error);
         }
-        console.log('submitted: ', username, password);
+        console.log('submitted: ', email, username, password);
     }
 
     const validateForm = () => {
