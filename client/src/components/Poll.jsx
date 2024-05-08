@@ -28,32 +28,34 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
     console.log(' in useEffect()...selectedOptionDescriptoin: ', selectedDescription);
   }, [selectedDescription]);
 
-  //useEffect to fetch poll id
   useEffect(() => {
-    async function fetchPoll() {
-      const url = 'http://localhost:5206/Poll/${id}'; //FIXME: Replace with URL for getting poll by ID
-      try {
-          const response = await fetch (url, {
-              method: 'GET',
-          });
-          if (response.ok) {
-              const data = await response.json();
-              console.log('Poll ID: ', data);
-              setPoll(data);
-          } else {
-              console.log('Poll not found');
-          }
-      } catch (error) {
-          console.log('Error in fetching poll: ', error);
-      }
-    }
     fetchPoll();
-  }, [setPoll]);
+    console.log(' in useEffect()...pollID: ', poll);
+  }, [poll]);
+
+  async function fetchPoll() {
+    const url = 'http://localhost:5206/Poll/${id}'; //FIXME: Replace with URL for getting poll by ID
+    try {
+        const response = await fetch (url, {
+            method: 'GET',
+        });
+        if (response.ok) {
+            const data = await response.json();
+            console.log('Poll ID: ', data);
+            setPoll(data);
+        } else {
+            console.log('Poll not found');
+        }
+    } catch (error) {
+        console.log('Error in fetching poll: ', error);
+    }
+  }
 
   //FIXME: hardcoded values for now
   title = 'what is the better convenience store?'
   description = 'just curious wat u guys think?? evaluating based on their snack options and how stocked they are.'
   pollOptions = ['Outpost Convenience Store', 'Bookstore Convenience Store']
+  const testUID = 1;
 
   const handleVote = (event, option, index) => {
     event.preventDefault();
@@ -83,7 +85,13 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({option}) 
+            body: JSON.stringify({
+              "UpOrDown": option,
+              "VoterUID": testUID,
+              "VoteUID": null,
+              "PollID": poll,
+              "RatingID": null
+            }) 
         });
         if (response.ok) {
             console.log('Vote posted', {option});
