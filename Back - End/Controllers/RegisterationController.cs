@@ -7,7 +7,7 @@ using Team3.ThePollProject.Services;
 
 namespace Team3.ThePollProject.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class RegisterationController : ControllerBase
     {
@@ -20,6 +20,7 @@ namespace Team3.ThePollProject.Controllers
 
         // POST api/<RegisterationController>
         [HttpPost]
+        [Route("Register")]
         public IActionResult Post(string email)
         {
             IResponse response = new Response();
