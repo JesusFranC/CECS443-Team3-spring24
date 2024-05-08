@@ -39,14 +39,14 @@ export const RegisterForm = () => {
     }
 
     const validateForm = () => {
-        // if (username === '' || password === '') {
-        //     alert('Please fill out all fields');
-        //     return false;
-        // }
-        // if (password !== password2) {
-        //     alert('Passwords do not match');
-        //     return false;
-        // }
+        if (username === '' || password === '') {
+            alert('Please fill out all fields');
+            return false;
+        }
+        if (password !== password2) {
+            alert('Passwords do not match');
+            return false;
+        }
         return true;
     }
 
