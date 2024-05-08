@@ -24,10 +24,10 @@ export const RegisterForm = () => {
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(email) //FIXME: add username, password
+                    body: JSON.stringify({email, username, password}) //FIXME: add username, password
                 });
                 if (response.ok) {
-                    console.log('User registered', {email});
+                    console.log('User registered', {email, username, password});
                 } else {
                     alert('Registration failed. Please try again.');
                 }
