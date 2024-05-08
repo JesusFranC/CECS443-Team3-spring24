@@ -18,39 +18,39 @@ export const LoginForm = () => {
         console.log('in Login form, handleSubmit');
         try {
             console.log('in try block')
-            // if (validateForm()) {
-            //     console.log('Form is valid');
-            //     const response = await fetch (url, {
-            //         method: 'POST',
-            //         credentials: 'include',
-            //         headers: {
-            //             'Content-Type': 'application/json'
-            //         },
-            //         body: JSON.stringify({username, password})
-            //     });
-            //     if (response.ok) {
-            //         const data = await response.json();
-            //         const isLoggedIn = data.isLoggedIn
-            //         if (isLoggedIn) {
-            //             setAuthUser(data);
-            //             navigate(`/viewpolls`, {replace:true});
-            //         }
-            //     navigate("/viewpolls")
-            //     } else {
-            //         alert('Login failed. Please try again.');
-            //     }
-            // }
+            if (validateForm()) {
+                console.log('Form is valid');
+                const response = await fetch (url, {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({username, password})
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    const isLoggedIn = data.isLoggedIn
+                    if (isLoggedIn) {
+                        setAuthUser(data);
+                        navigate(`/viewpolls`, {replace:true});
+                    }
+                navigate("/viewpolls")
+                } else {
+                    alert('Login failed. Please try again.');
+                }
+            }
         } catch (error) {
             console.log('Error in login: ', error);
         }
     }
 
     const validateForm = () => {
-        // if (username === '' || password === '') {
-        //     alert('Please fill out all fields');
-        //     return false;
-        // }
-        // return true;
+        if (username === '' || password === '') {
+            alert('Please fill out all fields');
+            return false;
+        }
+        return true;
     }
 
   return (
