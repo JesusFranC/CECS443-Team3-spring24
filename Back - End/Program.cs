@@ -3,10 +3,8 @@ using Team3.ThePollProject.DAO.DataAccessObjects;
 using Team3.ThePollProject.DataAccess;
 using Team3.ThePollProject.LoggingLibrary;
 using Team3.ThePollProject.Middleware;
-using Team3.ThePollProject.Model;
 using Team3.ThePollProject.Models;
 using Team3.ThePollProject.Security;
-using Team3.ThePollProject.SecurityLibrary;
 using Team3.ThePollProject.SecurityLibrary.Interfaces;
 using Team3.ThePollProject.SecurityLibrary.Targets;
 using Team3.ThePollProject.Services;
@@ -33,6 +31,7 @@ builder.Services.AddScoped<ILogService, LogService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ISecurityManager, SecurityManager>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+builder.Services.AddScoped<IPollingService, PollingService>();
 
 var app = builder.Build();
 

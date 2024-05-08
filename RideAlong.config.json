@@ -1,8 +1,8 @@
 {
   "ConnectionStrings": {
-    "readOnly": "Server=localhost;Database=PollProject;User Id=Reader;Password=Reader;TrustServerCertificate=True",
-    "writeOnly": "Server=localhost;Database=PollProject;User Id=Writer;Password=Writer;TrustServerCertificate=True",
-    "admin": "Server=localhost;Database=PollProject;User Id=Admin;Password=Admin;TrustServerCertificate=True"
+    "readOnly": "Server=.\\POLLPROJECT;Database=PollProject;User Id=Reader;Password=Reader;TrustServerCertificate=True",
+    "writeOnly": "Server=.\\POLLPROJECT;Database=PollProject;User Id=Writer;Password=Writer;TrustServerCertificate=True",
+    "admin": "Server=.\\POLLPROJECT;Database=PollProject;User Id=Admin;Password=Admin;TrustServerCertificate=True"
   }
     
 }

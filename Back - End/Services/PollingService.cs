@@ -1,13 +1,13 @@
 ﻿using Microsoft.Data.SqlClient;
+using Newtonsoft.Json;
 using Team3.ThePollProject.DataAccess;
 using Team3.ThePollProject.LoggingLibrary;
 using Team3.ThePollProject.Model;
-using Team3.ThePollProject.Models;
 using Team3.ThePollProject.Models.Response;
 
 namespace Team3.ThePollProject.Services
 {
-    public class PollingService
+    public class PollingService : IPollingService
     {
         private readonly ILogService _logService;
         private readonly IGenericDAO _dao;
@@ -97,7 +97,7 @@ namespace Team3.ThePollProject.Services
         }
 
         // Create a new poll
-        public IResponse CreatePoll(PollingModel poll)
+        public IResponse CreatePoll(long UserUID, string title, string description, string[] pollOptions)
         {
             // Call a method from data access layer to create a new poll
             // Log any relevant information using _logService
@@ -106,19 +106,17 @@ namespace Team3.ThePollProject.Services
 
             try
             {
-                if (poll == null)
-                {
-                    response.HasError = true;
-                    response.ErrorMessage = "Rating model is null";
-                    return response;
-                }
 
-                if (string.IsNullOrEmpty(poll.Title) || string.IsNullOrEmpty(poll.Description))
+
+                if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description))
                 {
                     response.HasError = true;
                     response.ErrorMessage = "Title and description are null";
                     return response;
                 }
+
+                DateTime currentTime = DateTime.Now;
+                string optionsJson = JsonConvert.SerializeObject(pollOptions);
 
                 var sqlCommand = (@"
                     INSERT INTO Polls (UserUID, Title, Description, TimeOpen, Options)
@@ -127,11 +125,11 @@ namespace Team3.ThePollProject.Services
 
                 HashSet<SqlParameter> parameters = new HashSet<SqlParameter>
                 {
-                    new SqlParameter("@UserUID", poll.UserAccount_UID),
-                    new SqlParameter("@Title", poll.Title),
-                    new SqlParameter("@Description", poll.Description),
-                    new SqlParameter("@TimeOpen", poll.TimeOpen),
-                    new SqlParameter("@Options", poll.Options)
+                    new SqlParameter("@UserUID", UserUID),
+                    new SqlParameter("@Title", title),
+                    new SqlParameter("@Description", description),
+                    new SqlParameter("@TimeOpen", currentTime),
+                    new SqlParameter("@Options", optionsJson)
                 };
 
                 var sqlCommands = new List<KeyValuePair<string, HashSet<SqlParameter>?>>();
