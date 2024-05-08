@@ -33,6 +33,15 @@
     p-[14px] 
     focus:outline-none
   }
+  
+  .btn-select {
+    @apply flex text-base 
+    text-lg font-bold
+    items-center 
+    p-40 px-40 m-1 
+    bg-lbsu-blue hover:bg-dark-blue
+    rounded-lg;
+  }
 }
 
 

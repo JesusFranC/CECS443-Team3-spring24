@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Review from './pages/Review';
 import Entity from './pages/Entity';
+import Choose from './pages/Choose';
 
 function App() {
   return (  
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/review" element={<Review />} />
         <Route path="/entity" element={<Entity />} />
+        <Route path="/choose" element={<Choose />} />
         
       </Routes>
     </Router>
