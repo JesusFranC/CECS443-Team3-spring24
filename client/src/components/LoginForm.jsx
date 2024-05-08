@@ -15,7 +15,7 @@ export const LoginForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url = '';
+        const url = 'http://localhost:5206/Auth/startLogin';
         //Implement submitting form data to the server
         console.log('in Login form, handleSubmit');
         try {
