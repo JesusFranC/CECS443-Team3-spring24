@@ -22,11 +22,10 @@ export const LoginForm = () => {
                 console.log('Form is valid');
                 const response = await fetch (url, {
                     method: 'POST',
-                    credentials: 'include',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({username, password})
+                    body: JSON.stringify(username)
                 });
                 if (response.ok) {
                     const data = await response.json()
