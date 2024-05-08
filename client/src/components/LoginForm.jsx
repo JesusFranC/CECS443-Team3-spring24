@@ -21,7 +21,7 @@ export const LoginForm = () => {
             console.log('in try block')
             if (validateForm()) {
                 console.log('Form is valid. Username entered: ', username);
-                setEnterPasswordMode(true);
+                
                 const response = await fetch (url, {
                     method: 'POST',
                     credentials: 'include',
@@ -32,7 +32,8 @@ export const LoginForm = () => {
                 });
                 if (response.ok) {
                     const data = await response.json()
-                    alert('Login successful. Please enter OTP sent to your email.');
+                    setEnterPasswordMode(true);
+                    alert('Username valid. Please enter OTP sent to your email.');
                     console.log("in enter password mode:", {enterPasswordMode})
                     // const isLoggedIn = data.isLoggedIn
                     // if (isLoggedIn) {
