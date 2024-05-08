@@ -10,7 +10,6 @@ export const Poll = ({ Title, description, pollOptions = [] }) => {
   //2. handleVote = send poll response to backend
   //3. button - mark as selected
   //4. Limit vote to 1 per user
-  const PollID = '1234';
   const {authUser, setAuthUser} = useContext(AuthContext);
   const [user, setUserDetails] = useState(null);
   const createdAt = new Date();
