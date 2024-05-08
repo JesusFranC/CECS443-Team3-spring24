@@ -1,28 +1,72 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using Team3.ThePollProject.Models; // Import your model namespace
+using System.Text.Json; // Import your model namespace
+using Team3.ThePollProject.LoggingLibrary;
+using Team3.ThePollProject.Models;
+using Team3.ThePollProject.Models.Response;
+using Team3.ThePollProject.Services;
+using Team3ThePollProject.Security;
 
 namespace Team3.ThePollProject.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class PollController : ControllerBase
     {
+        private readonly ILogService _logService;
+        private readonly PollingService _pollingService;
+        private readonly ISecurityManager _securityManager;
+
+        public PollController(ILogService logService, PollingService pollingService, ISecurityManager securityManager)
+        {
+            _logService = logService;
+            _pollingService = pollingService;
+            _securityManager = securityManager;
+        }
+
         // GET: api/Poll
         [HttpGet]
         public IActionResult GetPolls()
         {
-            // Implement logic to fetch all polls
-            return Ok();
+            IResponse response;
+            response = _pollingService.GetPolls();
+
+            if (response.HasError == true)
+            {
+                return BadRequest();
+            }
+            else if (response.HasError == false)
+            {
+                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
+
+                return Ok(JsonRatings);
+            }
+            else
+            {
+                return Ok("No ratings found");
+            }
         }
 
         // GET: api/Poll/{id}
         [HttpGet("{id}")]
         public IActionResult GetPoll(long id)
         {
-            // Implement logic to fetch poll by id
-            return Ok();
+            IResponse response;
+            response = _pollingService.GetPoll(id);
+
+            if (response.HasError == true)
+            {
+                return BadRequest();
+            }
+            else if (response.HasError == false)
+            {
+                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
+
+                return Ok(JsonRatings);
+            }
+            else
+            {
+                return Ok("The specific rating found");
+            }
         }
 
         // POST: api/Poll

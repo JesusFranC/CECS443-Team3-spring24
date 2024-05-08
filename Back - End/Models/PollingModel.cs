@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Team3.ThePollProject.Models
+﻿namespace Team3.ThePollProject.Models
 {
-    public class PollingModel
+    public class PollingModel : IPollingModel
     {
         public long PollID { get; set; }
         public long UserAccount_UID { get; set; }

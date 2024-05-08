@@ -1,6 +1,6 @@
 ﻿namespace Team3.ThePollProject.Models
 {
-    public class RatingModel
+    public class RatingModel : IRatingModel
     {
         public long RatingID { get; set; }
         public long UserAccount_UID { get; set; }

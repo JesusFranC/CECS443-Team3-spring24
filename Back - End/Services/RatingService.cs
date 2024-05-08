@@ -2,7 +2,6 @@
 using Team3.ThePollProject.DataAccess;
 using Team3.ThePollProject.LoggingLibrary;
 using Team3.ThePollProject.Model;
-using Team3.ThePollProject.Models;
 using Team3.ThePollProject.Models.Response;
 
 namespace Team3.ThePollProject.Services
@@ -96,7 +95,7 @@ namespace Team3.ThePollProject.Services
         }
 
         // Create a new rating
-        public IResponse CreateRating(RatingModel rating)
+        public IResponse CreateRating(long UserUID, string title, string description)
         {
             // Call a method from data access layer to create a new rating
             // Log any relevant information using _logService
@@ -105,17 +104,12 @@ namespace Team3.ThePollProject.Services
 
             try
             {
-                if (rating == null)
-                {
-                    response.HasError = true;
-                    response.ErrorMessage = "Rating model is null";
-                    return response;
-                }
 
-                if (string.IsNullOrEmpty(rating.Title) || string.IsNullOrEmpty(rating.Description))
+
+                if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description))
                 {
                     response.HasError = true;
-                    response.ErrorMessage = "Title and description are null";
+                    response.ErrorMessage = "Title or description are null";
                     return response;
                 }
 
@@ -124,12 +118,14 @@ namespace Team3.ThePollProject.Services
                     VALUES (@UserUID, @Title, @Description, @TimeOpen);
                 ");
 
+                DateTime currentTime = DateTime.Now;
+
                 HashSet<SqlParameter> parameters = new HashSet<SqlParameter>
                 {
-                    new SqlParameter("@UserUID", rating.UserAccount_UID),
-                    new SqlParameter("@Title", rating.Title),
-                    new SqlParameter("@Description", rating.Description),
-                    new SqlParameter("@TimeOpen", rating.TimeOpen),
+                    new SqlParameter("@UserUID", UserUID),
+                    new SqlParameter("@Title", title),
+                    new SqlParameter("@Description", description),
+                    new SqlParameter("@TimeOpen", currentTime),
                 };
 
                 var sqlCommands = new List<KeyValuePair<string, HashSet<SqlParameter>?>>();
