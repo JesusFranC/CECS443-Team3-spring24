@@ -87,7 +87,7 @@ export const LoginForm = () => {
                     type="checkbox" 
                     id="check" 
                     onClick={() => setShowPassword((prev) => !prev)} />
-                <label className='px-2' for="check">Show Password</label>
+                <label className='px-2' htmlFor="check">Show Password</label>
             </div>
             )
         }
