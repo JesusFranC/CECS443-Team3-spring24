@@ -2,6 +2,7 @@
 {
     public class Vote : IVote
     {
+
         public bool UpOrDown { get; set; }
         public long VoterUID { get; set; }
         public long? VoteID { get; set; }

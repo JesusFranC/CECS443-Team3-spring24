@@ -2,6 +2,7 @@
 using System.Text.Json;
 using Team3.ThePollProject.LoggingLibrary;
 using Team3.ThePollProject.Model;
+using Team3.ThePollProject.Models;
 using Team3.ThePollProject.Models.Response;
 using Team3.ThePollProject.SecurityLibrary.Interfaces;
 using Team3.ThePollProject.Services;
@@ -15,11 +16,11 @@ namespace Team3.ThePollProject.Controllers
     public class RatingController : ControllerBase
     {
         private readonly ILogService _logService;
-        private readonly RatingService _ratingService;
+        private readonly IRatingService _ratingService;
         private readonly ISecurityManager _securityManager;
 
 
-        public RatingController(ILogService logService, RatingService ratingService, ISecurityManager securityManager)
+        public RatingController(ILogService logService, IRatingService ratingService, ISecurityManager securityManager)
         {
             _logService = logService;
             _ratingService = ratingService;
@@ -33,10 +34,10 @@ namespace Team3.ThePollProject.Controllers
         {
             // Implement logic to fetch all ratings
             IResponse response;
-            IAppPrincipal principal = _securityManager.JwtToPrincipal();
-            IAccountUserModel user = new AccountUserModel(principal.userIdentity.userName!);
-            user.UserId = principal.userIdentity.UID;
-            user.UserHash = principal.userIdentity.userHash;
+            //IAppPrincipal principal = _securityManager.JwtToPrincipal();
+            //IAccountUserModel user = new AccountUserModel(principal.userIdentity.userName);
+            //user.UserId = principal.userIdentity.UID;
+            //user.UserHash = principal.userIdentity.userHash;
 
             response = _ratingService.GetRatings();
 
@@ -112,6 +113,7 @@ namespace Team3.ThePollProject.Controllers
 
         // POST: api/Rating
         [HttpPost]
+        [Route("api/Rating/Create")]
         public IActionResult CreateRating(long EntityID, string title, string description)
         {
             // Implement logic to create a new rating
@@ -165,6 +167,36 @@ namespace Team3.ThePollProject.Controllers
             else
             {
                 return Ok("The specific rating was deleted");
+            }
+        }
+
+        [HttpPost]
+        [Route("api/Rating/Vote")]
+        public IActionResult VoteOnRating(IVote vote)
+        {
+            // Implement logic to create a new rating
+            IResponse response;
+            IAppPrincipal principal = _securityManager.JwtToPrincipal();
+            IAccountUserModel user = new AccountUserModel(principal.userIdentity.userName);
+            vote.VoterUID = principal.userIdentity.UID;
+            user.UserHash = principal.userIdentity.userHash;
+
+
+            response = _ratingService.VoteOnRating(vote);
+
+            if (response.HasError == true)
+            {
+                return BadRequest();
+            }
+            else if (response.HasError == false)
+            {
+                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
+
+                return Ok(JsonRatings);
+            }
+            else
+            {
+                return Ok("The specific rating found");
             }
         }
     }
