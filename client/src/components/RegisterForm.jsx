@@ -5,26 +5,48 @@ import React, { useState, useEffect }  from 'react'
 // someone else’s actions, so I can ensure the security of my account.
 export const RegisterForm = () => {
     //declare variables for form fields
+    const [email, setEmail] = useState(''); //FIXME: Change to [username, setUsername]
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');   
     const [password2, setPassword2] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+
     
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         //Implement submitting form data to the server
+        const url = 'http://localhost:5000/api/Poll';
+        try {
+            if (validateForm()) {
+                console.log('Form is valid');
+                const response = await fetch (url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({email}) //FIXME: add username, password
+                });
+                if (response.ok) {
+                    console.log('User registered', {email});
+                } else {
+                    alert('Registration failed. Please try again.');
+                }
+            }
+        } catch (error) {
+            console.log('Error in registration: ', error);
+        }
         console.log('submitted: ', username, password);
     }
 
     const validateForm = () => {
-        if (username === '' || password === '') {
-            alert('Please fill out all fields');
-            return false;
-        }
-        if (password !== password2) {
-            alert('Passwords do not match');
-            return false;
-        }
+        // if (username === '' || password === '') {
+        //     alert('Please fill out all fields');
+        //     return false;
+        // }
+        // if (password !== password2) {
+        //     alert('Passwords do not match');
+        //     return false;
+        // }
         return true;
     }
 
@@ -33,6 +55,14 @@ export const RegisterForm = () => {
     <div className="flex flex-col items-center pt-28 px-12">
       <h3 className='text-3xl font-semibold pb-4'>Register for Rating and Polling</h3>
       <form className='justify-start py-10' onSubmit={handleSubmit}> {/* form*/}
+        <div className="pb-2"> {/* field*/}
+            <input type="text"
+            name='username'
+            placeholder="Enter your email"
+            onChange={(e) => setEmail(e.target.value)}
+            className="field-input"
+            />
+        </div>
         <div className="pb-2"> {/* field*/}
             <input type="text"
             name='username'

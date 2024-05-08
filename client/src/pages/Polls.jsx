@@ -21,16 +21,17 @@ export const Polls = () => {
 
   return (
         <div className='container mx-auto'>
-            <div className='flex flex-row h-full'>
-                <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-row flex-auto h-full'>
+                <div className='flex flex-col flex-auto justify-center items-center'>
                     <div>
                         <h1 className='text-3xl font-semibold'>Polls</h1>
-                        <div className='mt-5'>
+                        <div className='mt-5 justify-end'>
                             <button onClick={getPolls} className='btn-view px-10'>View Polls</button>
-                            <button  className='btn-create mt-4'> Create Poll </button>
+                            {/* <button  className='btn-create mt-4'> Create Poll </button> */}
                         </div>
+                        {renderPollTable()}
                     </div>
-                    {renderPollTable()}
+                    
                 </div>
             </div>
             
