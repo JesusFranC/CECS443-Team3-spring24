@@ -15,7 +15,7 @@ export const RegisterForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         //Implement submitting form data to the server
-        const url = 'http://localhost:5000/api/Poll';
+        const url = 'http://localhost:5206/Registeration/Register';
         try {
             if (validateForm()) {
                 console.log('Form is valid');
@@ -24,7 +24,7 @@ export const RegisterForm = () => {
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({email}) //FIXME: add username, password
+                    body: JSON.stringify(email) //FIXME: add username, password
                 });
                 if (response.ok) {
                     console.log('User registered', {email});
