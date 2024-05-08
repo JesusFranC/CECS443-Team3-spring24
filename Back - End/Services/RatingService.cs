@@ -263,7 +263,7 @@ namespace Team3.ThePollProject.Services
                 // Generate SqlCommand to select all ratings along with corresponding votes
                 var sqlCommand = new SqlCommand(@"
                     SELECT *
-                    FROM RatingEntities
+                    FROM EntityID
                 ");
 
                 // Call data access layer method to execute the command
@@ -395,8 +395,8 @@ namespace Team3.ThePollProject.Services
                 }
 
                 var sqlCommand = (@"
-                    INSERT INTO Ratings (UserUID, Title, Description, TimeOpen)
-                    VALUES (@UserUID, @Title, @Description, @TimeOpen);
+                    INSERT INTO Ratings (UserUID, EntityId, Title, Description, TimeOpen)
+                    VALUES (@UserUID,@EntityId, @Title, @Description, @TimeOpen);
                 ");
 
                 DateTime currentTime = DateTime.Now;
@@ -404,7 +404,7 @@ namespace Team3.ThePollProject.Services
                 HashSet<SqlParameter> parameters = new HashSet<SqlParameter>
                 {
                     new SqlParameter("@UserUID", UserUID),
-                    new SqlParameter("@EntityID", EntityID),
+                    new SqlParameter("@EntityId", EntityID),
                     new SqlParameter("@Title", title),
                     new SqlParameter("@Description", description),
                     new SqlParameter("@TimeOpen", currentTime),
