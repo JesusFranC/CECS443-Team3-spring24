@@ -8,6 +8,7 @@ export const LoginForm = () => {
     //declare variables for form fields
     // const {authUser, setAuthUser} = useContext(AuthContext);
     const [username, setUsername] = useState('');
+    const [enterPasswordMode, setEnterPasswordMode] = useState(false);
     const [password, setPassword] = useState(''); 
     const [showPassword, setShowPassword] = useState(false);
 
@@ -19,7 +20,7 @@ export const LoginForm = () => {
         try {
             console.log('in try block')
             if (validateForm()) {
-                console.log('Form is valid');
+                console.log('Form is valid. Username entered: ', username);
                 const response = await fetch (url, {
                     method: 'POST',
                     headers: {
@@ -29,12 +30,28 @@ export const LoginForm = () => {
                 });
                 if (response.ok) {
                     const data = await response.json()
-                    const isLoggedIn = data.isLoggedIn
-                    if (isLoggedIn) {
-                        setAuthUser(data);
-                        navigate(`/viewpolls`, {replace:true});
-                    }
-                navigate("/viewpolls")
+                    alert('Login successful. Please enter OTP sent to your email.');
+                    setEnterPasswordMode(true);
+                    console.log("in enter password mode:", {enterPasswordMode})
+                    // const isLoggedIn = data.isLoggedIn
+                    // if (isLoggedIn) {
+                    //     // setAuthUser(data);
+                    //     // navigate(`/viewpolls`, {replace:true});
+                    // }
+                    // const url2 = 'http://localhost:5206/Auth/tryAuthentication';
+                    // const response2 = await fetch(url, {
+                    //     method: 'POST',
+                    //     headers: {
+                    //         'Content-Type': 'application/json'
+                    //     },
+                    //     body: JSON.stringify(password) 
+                    // });
+                    // if (response2.ok) {
+                    //     console.log('User logged in', {username});
+                    //     e.target.reset();
+                    // } else {
+                    //     alert('OTP incorrect. Please try again.');
+                    // }
                 } else {
                     alert('Login failed. Please try again.');
                 }
@@ -47,7 +64,7 @@ export const LoginForm = () => {
     }
 
     const validateForm = () => {
-        if (username === '' || password === '') {
+        if (username === '') {
             alert('Please fill out all fields');
             return false;
         }
@@ -67,23 +84,27 @@ export const LoginForm = () => {
             className="field-input"
             />
         </div>
-        <div className='pb-2'>
-            <input 
-                type={
-                    showPassword ? "text" : "password"
-                }
-                name='password'
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="field-input"
-            />
-        </div>
-        <input 
-            type="checkbox" 
-            id="check" 
-            onClick={() => setShowPassword((prev) => !prev)} />
-        <label className='px-2' for="check">Show Password</label>
+        {enterPasswordMode && (
+            <div className='pb-2'>
+                <input 
+                    type={
+                        showPassword ? "text" : "password"
+                    }
+                    name='password'
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="field-input"
+                />
+                <input 
+                    type="checkbox" 
+                    id="check" 
+                    onClick={() => setShowPassword((prev) => !prev)} />
+                <label className='px-2' for="check">Show Password</label>
+            </div>
+            )
+        }
+
         
         <div className='flex flex-col items-center justify-center m-2 overflow-auto py-4'>
             <button type="submit" onClick={() => {validateForm()}}
