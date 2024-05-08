@@ -13,8 +13,13 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
   const {authUser, setAuthUser} = useContext(AuthContext);
   const [user, setUserDetails] = useState(null);
   const [voted, setVoted] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState(null);
   const createdAt = new Date();
+
+  //useEffect to log updated selectedOption
+  useEffect(() => {
+    console.log(' in useEffect()...selectedOption: ', selectedOption);
+  }, [selectedOption]);
 
   //FIXME: hardcoded values for now
   title = 'Best convenience store?'
@@ -26,34 +31,34 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
     console.log('in handleVote');
     if (validateForm()) {
       setSelectedOption(option);
-      console.log('voted', option)
+      console.log('voted', selectedOption)
       setVoted(true);
-      handlePostVote(event);
+      handlePostVote(event, option);
     } 
   }
 
-  const handlePostVote = async (e) => {
+  const handlePostVote = async (e, option) => {
     e.preventDefault();
     //Implement submitting poll data to the server
-    const url = 'http://localhost:5206/Registeration/Register'; //FIXME: Replace with URL for posting user vote
+    const url = 'http://localhost:5206/Poll/voteOnPoll'; //FIXME: Replace with URL for posting user vote
     try {
-        console.log('In Handle post vote');
+        console.log('In Handle post vote', {option});
         const response = await fetch (url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({selectedOption}) 
+            body: JSON.stringify({option}) 
         });
         if (response.ok) {
-            console.log('Vote posted', {selectedOption});
+            console.log('Vote posted', {option});
         } else {
             alert('Voting failed. Please try again.');
         }
     } catch (error) {
         console.log('Error in poll voting: ', error);
     }
-    console.log('voted: ', selectedOption);
+    console.log('voted: ', option);
 }
 
   const validateForm = () => {
