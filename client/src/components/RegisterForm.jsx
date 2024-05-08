@@ -22,7 +22,7 @@ export const RegisterForm = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(email) //FIXME: add username, password
+                body: JSON.stringify(email)
             });
             if (response.ok) {
                 console.log('User registered', {email});

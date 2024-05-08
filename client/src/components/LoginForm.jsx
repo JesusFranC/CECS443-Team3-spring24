@@ -20,7 +20,7 @@ export const LoginForm = () => {
         try {
             console.log('in try block')
             if (validateForm()) {
-                console.log('Form is valid. Username entered: ', username);
+                console.log('Form is valid. ');
                 
                 const response = await fetch (url, {
                     method: 'POST',
