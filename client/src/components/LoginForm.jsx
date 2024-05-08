@@ -1,18 +1,50 @@
-import React, { useState, useEffect }  from 'react'
+import React, { useState, useEffect }  from 'react';
+import { AuthContext } from '../context/AuthProvider';
+import { useNavigate } from 'react-router-dom';
 
 // USE CASE #1: As a registered user, I want to log in
 // securely so that I cannot be held responsible for 
 // someone else’s actions, so I can ensure the security of my account.
 export const LoginForm = () => {
     //declare variables for form fields
+    const {authUser, setAuthUser} = useContext(AuthContext);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState(''); 
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        const url = '';
         //Implement submitting form data to the server
-        console.log('submitted: ', username, password);
+        console.log('in Login form, handleSubmit');
+        try {
+            if (validateForm()) {
+                console.log('Form is valid');
+                const response = await fetch (url, {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({username, password})
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    const isLoggedIn = data.isLoggedIn
+                    if (isLoggedIn) {
+                        setAuthUser(data);
+                        navigate(`/viewpolls`, {replace:true});
+                    }
+                navigate("/viewpolls")
+                } else {
+                    alert('Login failed. Please try again.');
+                }
+            }
+        } catch (error) {
+            console.log('Error in login: ', error);
+        }
+
     }
 
     const validateForm = () => {

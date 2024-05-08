@@ -1,8 +1,47 @@
 import React, { useState, useEffect }  from 'react'
 
 export const Polls = () => {
+    const [polls, setPolls] = useState([]);
+    
+    function getPolls() {
+        const url = 'http://localhost:5000/api/Poll';
+        fetch (url, {
+            method: 'GET',
+        })
+        .then(response => response.json())
+        .then(pollsFromServer => {
+            console.log('Polls from Server: ', pollsFromServer);
+            setPolls(pollsFromServer);
+        })
+        .catch((error) => {
+            console.log(error);
+            alert(error);
+        });
+    }
+
   return (
-    <div className='h-full flex flex-auto'> this is where we'll view all Polls
+        <div className='container mx-auto'>
+            <div className='flex flex-row h-full'>
+                <div className='flex flex-col justify-center items-center'>
+                    <div>
+                        <h1 className='text-3xl font-semibold'>Polls</h1>
+                        <div className='mt-5'>
+                            <button onClick={getPolls} className='btn-view px-10'>View Polls</button>
+                            <button  className='btn-create mt-4'> Create Poll </button>
+                        </div>
+                    </div>
+                    {renderPollTable()}
+                </div>
+            </div>
+            
+            
+        </div>
+  )
+}
+
+function renderPollTable() {
+    return(
+        <div className='w-full h-full flex flex-auto justify-items-center'>
         <table class="table-auto" className='m-10'>
             <thead>
                 <tr>
@@ -30,7 +69,7 @@ export const Polls = () => {
         </table>
 
     </div>
-  )
+    )
 }
 
 export default Polls
