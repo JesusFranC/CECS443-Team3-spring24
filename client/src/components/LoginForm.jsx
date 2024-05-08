@@ -34,11 +34,11 @@ export const LoginForm = () => {
                     const data = await response.json()
                     alert('Login successful. Please enter OTP sent to your email.');
                     console.log("in enter password mode:", {enterPasswordMode})
-                    const isLoggedIn = data.isLoggedIn
-                    if (isLoggedIn) {
-                        setAuthUser(data);
-                        navigate(`/viewpolls`, {replace:true});
-                    }
+                    // const isLoggedIn = data.isLoggedIn
+                    // if (isLoggedIn) {
+                    //     setAuthUser(data);
+                    //     navigate(`/viewpolls`, {replace:true});
+                    // }
                 } else {
                     alert('Login failed. Please try again.');
                 }
