@@ -31,8 +31,9 @@ const EntityList = () => {
 
   return (
     <div className="container mx-auto p-4">
+      <button className="home-button absolute top-3 right-10 p-4 "></button>
       {/* Search Bar */}
-      <form onSubmit={handleSubmit} className="flex items-center mb-4">
+      <form onSubmit={handleSubmit} className="flex items-center mt-10 mb-4">
         <input
           type="text"
           placeholder="Search Entities..."

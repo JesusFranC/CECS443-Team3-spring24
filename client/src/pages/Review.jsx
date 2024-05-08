@@ -19,7 +19,8 @@ const Review = ({ onSubmit }) => {
 
   return (
     <div className="mx-auto mt-6 w-4/5">
-      <h2 className="text-4xl font-bold mb-4">Write A Review:</h2>
+      <button className="home-button absolute top-3 right-10 p-4 "></button>
+      <h2 className="text-4xl font-bold mb-4 mt-10">Write A Review:</h2>
       <form onSubmit={handleSubmit} className="space-y-4 flex flex-col">
         {/* Title Input */}
         <div>

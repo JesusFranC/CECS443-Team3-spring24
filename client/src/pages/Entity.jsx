@@ -11,6 +11,7 @@ const Entity = () => {
 
   return (
     <div className="mx-auto p-10 flex flex-col md:flex-row">
+      <button className="home-button absolute top-3 right-10 p-4 "></button>
       <div className="md:w-1/2 md:pr-8">
         {/* Image */}
         <div className="mb-4">
