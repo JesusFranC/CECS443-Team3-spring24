@@ -8,7 +8,7 @@ namespace Team3.ThePollProject.Services
 
         IResponse GetPoll(long id);
 
-        IResponse CreatePoll(long UserUID, string title, string description, string[] pollOptions);
+        IResponse CreatePoll(long UserUID, string title, string description, string pollOption1, string pollOption2);
 
         IResponse DeletePoll(long id);
     }

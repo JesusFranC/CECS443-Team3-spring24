@@ -5,7 +5,12 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Team3.ThePollProject", "Team3.ThePollProject.csproj", "{B5766A02-5438-45A7-8E49-888C0BCF0DA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollsAndRatings", "..\PollsAndRatings\PollsAndRatings.csproj", "{07B29577-0CC9-46D7-AC84-DCBC1CB3645B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PollsAndRatings", "..\PollsAndRatings\PollsAndRatings.csproj", "{07B29577-0CC9-46D7-AC84-DCBC1CB3645B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{813A96BF-643B-4D4C-814E-DF9F50F9112A}"
+	ProjectSection(SolutionItems) = preProject
+		RideAlong.config.json = RideAlong.config.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

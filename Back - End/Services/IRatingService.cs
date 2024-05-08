@@ -1,4 +1,5 @@
-﻿using Team3.ThePollProject.Models.Response;
+﻿using Team3.ThePollProject.Models;
+using Team3.ThePollProject.Models.Response;
 
 namespace Team3.ThePollProject.Services
 {
@@ -9,5 +10,7 @@ namespace Team3.ThePollProject.Services
         IResponse CreateRating(long UserUID, long EntityID, string title, string description);
         IResponse GetEntities();
         IResponse DeleteRating(long id);
+
+        IResponse VoteOnRating(IVote vote);
     }
 }
