@@ -56,6 +56,45 @@ namespace Team3.ThePollProject.Services
             }
         }
         // Get a rating by ID
+
+        public IResponse GetEntities()
+        {
+
+            // Call a method from data access layer to retrieve all entities
+            // Log any relevant information using _logService
+            // Return an IResponse object with the fetched data or any error message
+
+            IResponse response = new Response();
+
+            try
+            {
+                // Generate SqlCommand to select all ratings along with corresponding votes
+                var sqlCommand = new SqlCommand(@"
+                    SELECT *
+                    FROM RatingEntities
+                ");
+
+                // Call data access layer method to execute the command
+                response = _dao.ExecuteReadOnly(sqlCommand);
+
+                // Log success message
+                _logService.CreateLogAsync("Info", "Data", "Retrieved all Entities .", null);
+
+
+
+                response.HasError = false;
+                return response;
+            }
+            catch (Exception ex)
+            {
+                // Log error message
+                _logService.CreateLogAsync("Info", "Data", "Failed to retrieve all Entities.", null);
+                response.HasError = true;
+                response.ErrorMessage = "Failed to retrieve all Entities ";
+                return response;
+            }
+        }
+
         public IResponse GetRating(long id)
         {
             // Call a method from data access layer to retrieve the rating by ID
@@ -95,7 +134,7 @@ namespace Team3.ThePollProject.Services
         }
 
         // Create a new rating
-        public IResponse CreateRating(long UserUID, string title, string description)
+        public IResponse CreateRating(long UserUID, long EntityID, string title, string description)
         {
             // Call a method from data access layer to create a new rating
             // Log any relevant information using _logService
@@ -123,6 +162,7 @@ namespace Team3.ThePollProject.Services
                 HashSet<SqlParameter> parameters = new HashSet<SqlParameter>
                 {
                     new SqlParameter("@UserUID", UserUID),
+                    new SqlParameter("@EntityID", EntityID),
                     new SqlParameter("@Title", title),
                     new SqlParameter("@Description", description),
                     new SqlParameter("@TimeOpen", currentTime),
