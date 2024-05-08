@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Json; // Import your model namespace
-using Team3.ThePollProject.LoggingLibrary;
+using Team3.ThePollProject.Model;
 using Team3.ThePollProject.Models;
 using Team3.ThePollProject.Models.Response;
+using Team3.ThePollProject.SecurityLibrary.Interfaces;
 using Team3.ThePollProject.Services;
 using Team3ThePollProject.Security;
 
@@ -12,13 +13,11 @@ namespace Team3.ThePollProject.Controllers
     [Route("api/[controller]")]
     public class PollController : ControllerBase
     {
-        private readonly ILogService _logService;
-        private readonly PollingService _pollingService;
+        private readonly IPollingService _pollingService;
         private readonly ISecurityManager _securityManager;
 
-        public PollController(ILogService logService, PollingService pollingService, ISecurityManager securityManager)
+        public PollController(IPollingService pollingService, ISecurityManager securityManager)
         {
-            _logService = logService;
             _pollingService = pollingService;
             _securityManager = securityManager;
         }
@@ -42,7 +41,7 @@ namespace Team3.ThePollProject.Controllers
             }
             else
             {
-                return Ok("No ratings found");
+                return Ok("No polls found");
             }
         }
 
@@ -71,10 +70,31 @@ namespace Team3.ThePollProject.Controllers
 
         // POST: api/Poll
         [HttpPost]
-        public IActionResult CreatePoll([FromBody] PollingModel poll)
+        public IActionResult CreatePoll(string title, string description, string[] pollOptions)
         {
-            // Implement logic to create a new poll
-            return CreatedAtAction(nameof(GetPoll), new { id = poll.PollID }, poll);
+            IResponse response;
+            IAppPrincipal principal = _securityManager.JwtToPrincipal();
+            IAccountUserModel user = new AccountUserModel(principal.userIdentity.userName);
+            user.UserId = principal.userIdentity.UID;
+            user.UserHash = principal.userIdentity.userHash;
+
+
+            response = _pollingService.CreatePoll(user.UserId, title, description, pollOptions);
+
+            if (response.HasError == true)
+            {
+                return BadRequest();
+            }
+            else if (response.HasError == false)
+            {
+                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
+
+                return Ok(JsonRatings);
+            }
+            else
+            {
+                return Ok("Poll has been created");
+            }
         }
 
         // PUT: api/Poll/{id}
@@ -89,8 +109,24 @@ namespace Team3.ThePollProject.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeletePoll(long id)
         {
-            // Implement logic to delete a poll by id
-            return NoContent();
+            IResponse response;
+            response = _pollingService.DeletePoll(id);
+
+            if (response.HasError == true)
+            {
+                return BadRequest();
+            }
+            else if (response.HasError == false)
+            {
+                var JsonRatings = JsonSerializer.Serialize(response.ReturnValue);
+
+                return Ok(JsonRatings);
+            }
+            else
+            {
+                return Ok("The specific poll found and deleted");
+            }
         }
     }
+
 }
