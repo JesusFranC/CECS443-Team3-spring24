@@ -21,7 +21,7 @@ namespace Team3.ThePollProject.Controllers
         // POST api/<RegisterationController>
         [HttpPost]
         [Route("Register")]
-        public IActionResult Post(string email)
+        public IActionResult Post([FromBody]string email)
         {
             IResponse response = new Response();
 
@@ -29,7 +29,7 @@ namespace Team3.ThePollProject.Controllers
 
             if(response.HasError)
             {
-                return BadRequest();
+                return BadRequest("dick and balls");
             }
 
             return Ok();
