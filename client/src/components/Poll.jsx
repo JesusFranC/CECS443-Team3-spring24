@@ -12,8 +12,10 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
   //4. Limit vote to 1 per user
   const {authUser, setAuthUser} = useContext(AuthContext);
   const [user, setUserDetails] = useState(null);
+  const [poll, setPoll] = useState(null);
   const [voted, setVoted] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(false);
+  const [selectedDescription, setSelectedDescription] = useState(''); 
   const createdAt = new Date();
 
   //useEffect to log updated selectedOption
@@ -21,22 +23,55 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
     console.log(' in useEffect()...selectedOption: ', selectedOption);
   }, [selectedOption]);
 
-  //FIXME: hardcoded values for now
-  title = 'Best convenience store?'
-  description = 'just curious wat u guys think?? evaluating based on their snack options and how stocked they are.'
-  pollOptions = ['Outpost Convenience Store', 'Bookstore Convenience Store', 'Caffiene Lab', 'WallStrEAT Cafe']
+  //useEffect to log updated selectedDescription
+  useEffect(() => {
+    console.log(' in useEffect()...selectedOptionDescriptoin: ', selectedDescription);
+  }, [selectedDescription]);
 
-  const handleVote = (event, option) => {
+  //useEffect to fetch poll id
+  useEffect(() => {
+    async function fetchPoll() {
+      const url = 'http://localhost:5206/Poll/${id}'; //FIXME: Replace with URL for getting poll by ID
+      try {
+          const response = await fetch (url, {
+              method: 'GET',
+          });
+          if (response.ok) {
+              const data = await response.json();
+              console.log('Poll ID: ', data);
+              setPoll(data);
+          } else {
+              console.log('Poll not found');
+          }
+      } catch (error) {
+          console.log('Error in fetching poll: ', error);
+      }
+    }
+    fetchPoll();
+  }, [setPoll]);
+
+  //FIXME: hardcoded values for now
+  title = 'what is the better convenience store?'
+  description = 'just curious wat u guys think?? evaluating based on their snack options and how stocked they are.'
+  pollOptions = ['Outpost Convenience Store', 'Bookstore Convenience Store']
+
+  const handleVote = (event, option, index) => {
     event.preventDefault();
     console.log('in handleVote');
     if (validateForm()) {
-      setSelectedOption(option);
-      console.log('voted', selectedOption)
+      if ( index === 0) {
+        setSelectedOption(true);
+        setSelectedDescription(option);
+      } else if (index === 1) { 
+        setSelectedOption(false); 
+        setSelectedDescription(option);
+      }
+      console.log('voted #', selectedOption, ' for ', selectedDescription)
       setVoted(true);
-      handlePostVote(event, option);
+      handlePostVote(event, selectedOption);
     } 
   }
-
+  //posting vote to backend
   const handlePostVote = async (e, option) => {
     e.preventDefault();
     //Implement submitting poll data to the server
@@ -53,7 +88,7 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
         if (response.ok) {
             console.log('Vote posted', {option});
         } else {
-            alert('Voting failed. Please try again.');
+            console.log('Vote failed. Reponse not ok. Please try again.')
         }
     } catch (error) {
         console.log('Error in poll voting: ', error);
@@ -76,14 +111,14 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
         <p className='text-sm py-4'>{description}</p>
         <form className='flex flex-col' >
           {pollOptions.map((option, i) => (
-            <button key={i} className='btn-poll' type='submit' onClick={(event) => handleVote(event, option)}>
+            <button key={i} className='btn-poll' type='submit' onClick={(event) => handleVote(event, option, i)}>
               <label className='px-3'>{option}</label>
             </button>
           ))}
         </form>
         <div className='w-16 h-1.5 mt-3 bg-lbsu-blue rounded-lg'></div>
         <p className='text-sm py-3 italic'>Posted on {createdAt.toLocaleString()}</p>
-        <p className='text-sm py-3 italic'>You voted for: {selectedOption}</p>
+        <p className='text-sm py-3 italic'>You voted for: {selectedDescription}</p>
       </div>
     </div>
     

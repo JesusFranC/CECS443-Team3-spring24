@@ -31,11 +31,8 @@ export const Polls = () => {
                         </div>
                         {renderPollTable()}
                     </div>
-                    
                 </div>
             </div>
-            
-            
         </div>
   )
 }
