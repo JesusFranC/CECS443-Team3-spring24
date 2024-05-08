@@ -29,7 +29,7 @@ export const LoginForm = () => {
                     body: JSON.stringify({username, password})
                 });
                 if (response.ok) {
-                    const data = await response.json();
+                    const data = await response.json()
                     const isLoggedIn = data.isLoggedIn
                     if (isLoggedIn) {
                         setAuthUser(data);
@@ -39,6 +39,8 @@ export const LoginForm = () => {
                 } else {
                     alert('Login failed. Please try again.');
                 }
+            } else {
+                alert('Fields are not valid. Please try again.');
             }
         } catch (error) {
             console.log('Error in login: ', error);
