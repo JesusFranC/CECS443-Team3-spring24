@@ -9,8 +9,46 @@
 }
 
 @layer components {
-  .title {
-    @apply text-4xl font-bold text-center;
+  .btn-poll {
+    @apply flex text-base 
+    items-center 
+    p-3 m-1 
+    bg-light-grey-2 hover:bg-light-grey-1-hover
+    rounded-3xl;
+  }
+  .btn-register {
+    @apply flex text-base 
+    font-semibold
+    items-center 
+    p-2 px-10 m-1 
+    bg-lbsu-yellow hover:bg-dark-gold
+    rounded-lg;
+  }
+  .btn-view {
+    @apply flex text-sm
+    font-semibold
+    items-center 
+    p-2 px-6 m-1 
+    bg-light-blue hover:bg-lbsu-blue
+    rounded-lg;
+  }
+
+  .btn-create {
+    @apply flex text-sm
+    font-semibold
+    items-center 
+    p-2 px-10 m-1 
+    bg-alert-green hover:bg-alert-green-hover
+    rounded-lg;
+  }
+
+  .field-input {
+    @apply flex items-center 
+    m-auto w-[310px] h-[50px] 
+    bg-white
+    rounded-md 
+    p-[14px] 
+    focus:outline-none
   }
 }
 
