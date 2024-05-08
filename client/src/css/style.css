@@ -24,6 +24,14 @@
     bg-lbsu-yellow hover:bg-dark-gold
     rounded-lg;
   }
+  .btn-view {
+    @apply flex text-sm
+    font-semibold
+    items-center 
+    p-2 px-6 m-1 
+    bg-light-blue hover:bg-lbsu-blue
+    rounded-lg;
+  }
 
   .field-input {
     @apply flex items-center 

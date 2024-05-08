@@ -3,7 +3,7 @@ import { AuthContext } from '../context/AuthProvider';
 
 //USE CASE #4: I want to view reviews and ratings for different campus entities, so
 //I can make informed decisions about my campus experiences.
-export const Poll = ({ Title, description, maxVotes, pollOptions = [] }) => {
+export const Poll = ({ Title, description, pollOptions = [] }) => {
   //for pollingModel
   //FIXME: To-DO: 
   //1. persistence = get user from context
