@@ -6,7 +6,7 @@ using Team3.ThePollProject.Models.Response;
 
 namespace Team3.ThePollProject.Services
 {
-    public class RatingService
+    public class RatingService : IRatingService
     {
         private readonly ILogService _logService;
         private readonly IGenericDAO _dao;
