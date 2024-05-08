@@ -211,7 +211,7 @@ namespace Team3.ThePollProject.Services
             #region Get Votes for each poll
             foreach (var poll in listOfPolls)
             {
-                commandText = "SELECT * FROM Votes WHERE PollID = @PollID";
+                commandText = "SELECT * FROM Vote WHERE PollID = @PollID";
 
                 // Create return value object
                 List<IVote> tempVoteList = new List<IVote>();
@@ -300,22 +300,24 @@ namespace Team3.ThePollProject.Services
             #endregion
 
             #region Get Votes for each 
-            commandText = "SELECT * FROM Votes WHERE PollID = @PollID";
+            commandText = "SELECT * FROM Vote WHERE PollID = @PollID";
 
             // Create return value object
             List<IVote> tempVoteList = new List<IVote>();
 
             // Create Key Value pairs with sql and parameters
-            parameters = [CreateParameter("@PollID", SqlDbType.BigInt, poll.PollID)];
+            HashSet<SqlParameter>parameters2 = [CreateParameter("@PollID", SqlDbType.BigInt, poll.PollID)];
 
 
-            sqlStatement = new KeyValuePair<string, HashSet<SqlParameter>?>(commandText, parameters);
-            sqlCommandList.Add(sqlStatement);
+            KeyValuePair<string, HashSet<SqlParameter>?> sqlStatement2 = new KeyValuePair<string, HashSet<SqlParameter>?>(commandText, parameters2);
+            List<KeyValuePair<string, HashSet<SqlParameter>?>> sqlCommandList2 = new List<KeyValuePair<string, HashSet<SqlParameter>?>>();
+
+            sqlCommandList2.Add(sqlStatement2);
 
             try
             {
                 // Attempt SQL Execution
-                List<object[]> rowsReturned = _dao.ExecuteReadOnly(sqlCommandList);
+                List<object[]> rowsReturned = _dao.ExecuteReadOnly(sqlCommandList2);
 
                 // Loop through rows
                 foreach (object[] row in rowsReturned)
@@ -339,6 +341,7 @@ namespace Team3.ThePollProject.Services
 
             IResponse successResponse = new Response();
             successResponse.ReturnValue = [tempPollWithVotes];
+            successResponse.HasError = false;
             return successResponse;
         }
 

@@ -1,8 +1,23 @@
 {
   "ConnectionStrings": {
-    "readOnly": "Server=.\\POLLPROJECT;Database=PollProject;User Id=Reader;Password=Reader;TrustServerCertificate=True",
-    "writeOnly": "Server=.\\POLLPROJECT;Database=PollProject;User Id=Writer;Password=Writer;TrustServerCertificate=True",
-    "admin": "Server=.\\POLLPROJECT;Database=PollProject;User Id=Admin;Password=Admin;TrustServerCertificate=True"
+    "readOnly": "Server=.\\RIDEALONG; Database=443DevDB; User Id=RideAlongRead; Password=readme; TrustServerCertificate=True;",
+    "writeOnly": "Server=.\\RIDEALONG; Database=443DevDB; User Id=RideAlongWrite; Password=writeme; TrustServerCertificate=True;",
+    "admin": "Server=.\\RIDEALONG; Database=443DevDB; User Id=RideAlongAdmin; Password=admin; TrustServerCertificate=True;"
+  },
+    "EmailServiceLogin": {
+      "password": "longvi230502",
+      "username": "huynjoon2002@gmail.com"
+    },
+    "vehicleProfileManager" : {
+      "numOfResults": 10,
+      "maxownedcars": 10
+    },
+    "rentalFleetManager" : {
+        "numOfResults": 10,
+        "maxownedcars": 100
+    },
+    "inventoryManager" : {
+        "numOfResults": 10,
+        "maxownedcars": 100
+      }
   }
-    
-}

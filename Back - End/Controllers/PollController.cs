@@ -74,11 +74,11 @@ namespace Team3.ThePollProject.Controllers
             try
             {
                 IAppPrincipal principal = _securityManager.JwtToPrincipal();
-                _pollingService.CreatePoll(principal.userIdentity.UID, poll.Title, poll.Description, poll.Option1, poll.Option2);
+                response = _pollingService.CreatePoll(principal.userIdentity.UID, poll.Title, poll.Description, poll.Option1, poll.Option2);
             }
             catch
             {
-                _pollingService.CreatePoll(0, poll.Title, poll.Description, poll.Option1, poll.Option2);
+                response = _pollingService.CreatePoll(0, poll.Title, poll.Description, poll.Option1, poll.Option2);
             }
 
             if (response.HasError)
