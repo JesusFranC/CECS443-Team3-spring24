@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Review from './pages/Review';
 import Entity from './pages/Entity';
 import Choose from './pages/Choose';
+import Search from './pages/Search';
 
 function App() {
   return (  
@@ -18,6 +19,7 @@ function App() {
         <Route path="/review" element={<Review />} />
         <Route path="/entity" element={<Entity />} />
         <Route path="/choose" element={<Choose />} />
+        <Route path="/search" element={<Search />} />
         
       </Routes>
     </Router>
