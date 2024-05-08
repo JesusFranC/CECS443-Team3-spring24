@@ -13,6 +13,7 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
   const {authUser, setAuthUser} = useContext(AuthContext);
   const [user, setUserDetails] = useState(null);
   const [voted, setVoted] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
   const createdAt = new Date();
 
   //FIXME: hardcoded values for now
@@ -22,8 +23,12 @@ export const Poll = ({ title, description, pollOptions = [] }) => {
 
   const handleVote = async (e) => {
     e.preventDefault();
-    setVoted(true);
     console.log('in handleVote');
+    if (validateForm()) {
+      setVoted(true);
+      setSelectedOption(`${e.target.value}`);
+      console.log('voted', selectedOption)
+    } 
   }
 
   const validateForm = () => {
