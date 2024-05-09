@@ -8,6 +8,8 @@ import Review from './pages/Review';
 import Entity from './pages/Entity';
 import Choose from './pages/Choose';
 import Search from './pages/Search';
+import Polls from './pages/Polls';
+
 
 function App() {
   return (  
@@ -20,6 +22,7 @@ function App() {
         <Route path="/entity" element={<Entity />} />
         <Route path="/choose" element={<Choose />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/viewpolls" element={<Polls />} />
         
       </Routes>
     </Router>

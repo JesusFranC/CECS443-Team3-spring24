@@ -39,7 +39,8 @@ export default {
         
         //alert colors
         "alert-red": "#EB2929",
-        "alert-green": "#8EF060",
+        "alert-green": "#78CF4F",
+        "alert-green-hover": "#60A441",
       },
     },
   },
